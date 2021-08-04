@@ -1,10 +1,10 @@
 import { Fragment } from "react"
-// import globalStyles from './theme/global'
+import GlobalStyles from "./theme/GlobalStyles"
 
 function App() {
   return (
     <Fragment>
-      {/* <globalStyles /> */}
+      <GlobalStyles />
       <h1>Hello</h1>
     </Fragment>
   )

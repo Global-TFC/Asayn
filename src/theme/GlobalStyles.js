@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -69,3 +69,5 @@ export default createGlobalStyle`
       color: #C0CCDA;
   }
 `;
+
+export default  GlobalStyles;
