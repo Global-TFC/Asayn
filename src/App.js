@@ -5,7 +5,6 @@ function App() {
   return (
     <Fragment>
       <GlobalStyles />
-      <h1>Hello</h1>
     </Fragment>
   )
 }
