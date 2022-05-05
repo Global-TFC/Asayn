@@ -1,9 +1,4 @@
-/*=============== GOOGLE FONTS ===============*/
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-
-/*=============== VARIABLES CSS ===============*/
-
 :root {
     --header-height: 4rem;
     --header-width: 5rem;
@@ -12,7 +7,7 @@
     --sat: 63%;
     --first-color: #fff;
     --first-color-alt: hsl(var(--hue), var(--sat), 36%);
-    --title-color: rgb(206, 206, 206);
+    --title-color: rgb(255, 255, 255);
     --text-color: hsl(var(--hue), 8%, 35%);
     --body-color: hsl(var(--hue), 100%, 99%);
     --container-color: rgb(0, 64, 184);
@@ -68,33 +63,6 @@ img {
 }
 
 
-/*=============== REUSABLE CSS CLASSES ===============*/
-
-.section {
-    padding: 4.5rem 0 2rem;
-}
-
-.section__title {
-    font-size: var(--h1-font-size);
-    color: var(--title-color);
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-.section__height {
-    height: 100vh;
-}
-
-
-/*=============== LAYOUT ===============*/
-
-.container {
-    max-width: 968px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-
 /*=============== HEADER ===============*/
 
 .header {
@@ -117,14 +85,16 @@ img {
     align-items: center;
 }
 
-.nav__img {
-    width: 32px;
-    border-radius: 50%;
-}
-
 .nav__logo {
     color: var(--title-color);
     font-weight: 600;
+    font-size: 30px;
+    padding-left: 25px;
+}
+
+.notti_links {
+    color: #fff;
+    padding-right: 15px;
 }
 
 .nav__link {
@@ -157,35 +127,12 @@ img {
     transition: .3s;
 }
 
-
-/* Minimalist design, active link */
-
-
-/* .active-link::before{
-  content: '';
-  position: absolute;
-  bottom: -.5rem;
-  width: 4px;
-  height: 4px;
-  background-color: var(--first-color);
-  border-radius: 50%;
-} */
-
-
-/* Change background header */
-
 .scroll-header {
     box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
 }
 
 
 /*=============== SIDE BAR ===============*/
-
-
-/* .nav__list,
-.nav__link {
-    display: flex;
-} */
 
 .nav__menu {
     position: fixed;

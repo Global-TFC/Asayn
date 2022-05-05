@@ -5,9 +5,9 @@ function Navbar() {
     return (
         <>
             <header className="header" id="header">
-                <nav className="nav container">
+                <nav className="nav ">
                     <a href="##" className="nav__logo">knolsort</a>
-                    <div className="nav__link" >
+                    <div className="notti_links" >
                         <i className='bx bx-message-square-detail nav__icon'></i>
                         <i className='bx bx-message-square-detail nav__icon'></i>
                         <i className='bx bx-message-square-detail nav__icon'></i>
