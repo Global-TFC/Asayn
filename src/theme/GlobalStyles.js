@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle `
   *, *::before, *::after {
       margin: 0;
       padding: 0;
@@ -69,6 +69,38 @@ const GlobalStyles = createGlobalStyle`
   ::-ms-input-placeholder {
       color: #C0CCDA;
   }
+
+//   root root root
+
+:root {
+    --header-height: 4rem;
+    --header-width: 5rem;
+    /*========== Colors ==========*/
+    --hue: 174;
+    --sat: 63%;
+    --first-color: #fff;
+    --first-color-alt: hsl(var(--hue), var(--sat), 36%);
+    --title-color: rgb(255, 255, 255);
+    --text-color: hsl(var(--hue), 8%, 35%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: rgb(0, 64, 184);
+    /*========== Font and typography ==========*/
+    --body-font: 'Open Sans', sans-serif;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --tiny-font-size: .625rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+     :root {
+        --h1-font-size: 2.25rem;
+        --normal-font-size: 1rem;
+    }
+}
+
 `;
 
-export default  GlobalStyles;
+export default GlobalStyles;
