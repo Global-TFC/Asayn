@@ -135,6 +135,7 @@ img {
         display: grid;
         border-radius: 1.25rem 1.25rem 0 0;
         transition: .4s;
+        z-index: 10;
     }
     .nav__list,
     .nav__link {
@@ -142,6 +143,6 @@ img {
         display: flex;
     }
     body {
-        margin: var(--header-height) 0.5rem;
+        margin: var(--header-height) 0;
     }
 }
