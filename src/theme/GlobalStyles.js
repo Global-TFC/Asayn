@@ -101,6 +101,11 @@ const GlobalStyles = createGlobalStyle `
     }
 }
 
+.notfount{
+    color:red;
+    padding-top:100px;
+    text-align:center;
+}
 `;
 
 export default GlobalStyles;

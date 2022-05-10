@@ -1,11 +1,12 @@
 import React from "react";
 import "./Wlcm.css";
 import learn from "./icons/learning.svg";
+import { Link } from "react-router-dom";
 
 function Wlcm() {
   return (
     <div className="banner">
-      <div className="content">
+      <div className="content-welcom">
         <h1 className="title">Welcome to Knolsort</h1>
         <p className="paragraph">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -14,10 +15,11 @@ function Wlcm() {
           since the 1500s,
           <br /> when an unknown printer took a galley{" "}
         </p>
-        <button className="btn">Get Start</button>
+        <Link to={"/signin"} className="btn">Get Start</Link>
+        
       </div>
       <div className="icon">
-        <img src={learn} />
+        <img src={learn} alt="knolsort" />
       </div>
     </div>
   );

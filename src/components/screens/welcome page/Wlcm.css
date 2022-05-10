@@ -5,20 +5,28 @@
     display: flex;
     justify-content: space-between;
 }
-*{
+
+* {
     margin: 0;
     color: white;
 }
-.content {
+
+.content-welcom {
     padding-top: 140px;
     height: 190px;
     padding-left: 120px;
 }
+
 .title {
     font-size: 3rem;
     font-weight: 800;
-    padding-bottom: 0,3rem;
+    padding-bottom: 0, 3rem;
 }
+
+.icon {
+    padding-top: 150px;
+}
+
 .btn {
     color: black;
     outline: none;
@@ -33,7 +41,8 @@
     cursor: pointer;
     margin-right: 1rem;
 }
-.btn:hover{
+
+.btn:hover {
     color: #e6e6e6;
     background-color: #111;
 }
