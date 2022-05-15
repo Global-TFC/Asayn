@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    color: white;
+}
+
 .banner {
     background-color: #fff;
     width: auto;
@@ -6,15 +11,11 @@
     justify-content: space-between;
 }
 
-* {
-    margin: 0;
-    color: white;
-}
-
 .content-welcom {
-    padding-top: 140px;
+    padding-top: 15%;
     height: 190px;
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 .title {
@@ -24,7 +25,7 @@
 }
 
 .icon {
-    padding-top: 150px;
+    padding-top: 12%;
     min-width: 300px;
     max-width: 500px;
 }
@@ -47,4 +48,21 @@
 .btn:hover {
     color: #e6e6e6;
     background-color: #111;
+}
+
+@media (max-width: 570px) {
+    .banner {
+        display: block;
+        justify-content: stretch;
+    }
+    .content-welcom {
+        padding-top: 23%;
+    }
+    .title {
+        font-weight: 800;
+        padding-bottom: 0, 0;
+    }
+    .icon {
+        padding-top: 280px;
+    }
 }
