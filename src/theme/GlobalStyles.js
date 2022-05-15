@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle `
     --title-color: rgb(255, 255, 255);
     --text-color: hsl(var(--hue), 8%, 35%);
     --body-color: hsl(var(--hue), 100%, 99%);
-    --container-color: rgb(0, 64, 184);
+    --container-color: #4183f5;
     /*========== Font and typography ==========*/
     --body-font: 'Open Sans', sans-serif;
     --h1-font-size: 1.5rem;

@@ -14,7 +14,7 @@
 .content-welcom {
     padding-top: 140px;
     height: 190px;
-    padding-left: 120px;
+    padding-left: 5%;
 }
 
 .title {
@@ -25,6 +25,8 @@
 
 .icon {
     padding-top: 150px;
+    min-width: 300px;
+    max-width: 500px;
 }
 
 .btn {

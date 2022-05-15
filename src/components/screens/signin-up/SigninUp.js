@@ -18,9 +18,6 @@ function SigninUp() {
     console.log(signUp);
   }
 
-  
-
-
   return (
     <div>
       <div className={signUp} >
