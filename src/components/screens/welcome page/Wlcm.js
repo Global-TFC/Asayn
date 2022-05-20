@@ -16,6 +16,7 @@ function Wlcm() {
           <br /> when an unknown printer took a galley{" "}
         </p>
         <Link to={"/signin"} className="btn">Get Start</Link>
+        <Link to={"/home"} className="btn">Home</Link>
         
       </div>
       <div className="icon">

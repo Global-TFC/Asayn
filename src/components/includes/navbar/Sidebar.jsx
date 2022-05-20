@@ -1,4 +1,6 @@
 import React from 'react'
+import "./Navbar.css"
+import "../../../theme/GlobalStyles"
 
 function Sidebar() {
     return (
@@ -43,4 +45,4 @@ function Sidebar() {
     )
 }
 
-export default Sidebar
+export default Sidebar;
