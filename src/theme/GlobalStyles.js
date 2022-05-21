@@ -44,7 +44,7 @@ const GlobalStyles = createGlobalStyle `
       filter: alpa(opacity = 85);
       -moz-opacity: 0.85;
 	  -khtml-opacity: 0.85;
-      opacity: inherit0.85;
+      opacity: inherit;
   }
 
   p {
@@ -83,7 +83,7 @@ const GlobalStyles = createGlobalStyle `
     --first-color-alt: hsl(var(--hue), var(--sat), 36%);
     --title-color: rgb(255, 255, 255);
     --text-color: hsl(var(--hue), 8%, 35%);
-    --body-color: hsl(var(--hue), 100%, 99%);
+    --body-color: hsl(var(--hue),0.85 100%, 99%);
     --container-color: #4183f5;
     /*========== Font and typography ==========*/
     --body-font: 'Open Sans', sans-serif;
@@ -107,6 +107,11 @@ const GlobalStyles = createGlobalStyle `
     padding-top:100px;
     text-align:center;
 }
+
+// global style 
+
+
+
 `;
 
 export default GlobalStyles;

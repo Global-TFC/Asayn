@@ -1,24 +1,42 @@
 import React from 'react'
 import Sidebar from '../../includes/navbar/Sidebar';
 import Coscard from '../../includes/coscard/Coscard';
-import "./homepage.css"
+import styled from 'styled-components';
 import Banner from '../../includes/banner/Banner';
 
 function Home() {
   return (
-    <div>
+    <Homepage>
         <Sidebar/>
         <Banner/>
-        <div className="homepage">
+        <Homecontent >
           <Coscard/>
           <Coscard/>
           <Coscard/>
           <Coscard/>
-         
-        </div>
+        </Homecontent>
         
-    </div>
+    </Homepage>
   )
 }
+
+const Homepage = styled.div``;
+const Homecontent = styled.div`
+    padding-top: 10px;
+    padding-left: 110px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+    }
+`;
+
 
 export default Home;
