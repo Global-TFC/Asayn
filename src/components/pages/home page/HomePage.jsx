@@ -14,6 +14,14 @@ function Home() {
           <Coscard/>
           <Coscard/>
           <Coscard/>
+          <Coscard/>
+          <Coscard/>
+          <Coscard/>
+          <Coscard/>
+          <Coscard/>
+          <Coscard/>
+          <Coscard/>
+          <Coscard/>
         </Homecontent>
         
     </Homepage>
@@ -23,17 +31,18 @@ function Home() {
 const Homepage = styled.div``;
 const Homecontent = styled.div`
     padding-top: 10px;
-    padding-left: 110px;
-    padding-right: 50px;
-    padding-bottom: 20px;
-    flex-direction: column;
-
+    padding-left: 6%;
+    /* padding-right: 50px;
+    padding-bottom: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 768px) {
-    flex-direction: column;
     padding-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
     width: 100%;
     }
 `;
