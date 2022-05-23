@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import cardimg from './course.png'
 import "../../../theme/GlobalStyles"
+import { Link, Outlet } from 'react-router-dom'
 
 function Coscard() {
   return (
-    
+    <Link to={"cosname"} >
     <Homeset className='homeset'>
       <Carddiv className='card'>
         <Imgdiv className="cosimgdiv">
@@ -18,7 +19,9 @@ function Coscard() {
         </Cosdtl>
       </Carddiv>
       </Homeset>
-    
+      <Outlet/>
+      </Link>
+
   )
 }
 
