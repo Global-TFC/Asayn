@@ -1,44 +1,45 @@
 import React from 'react'
 import "./Navbar.css"
 import "../../../theme/GlobalStyles"
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
     return (
         <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
                 <li className="nav__item">
-                    <a href="#home" className="nav__link active-link">
-                        <i className='bx bx-home-alt nav__icon'></i><br/>
+                    <Link to={"/home"}  className="nav__link active-link">
+                        <i className='bx bxs-graduation nav__icon'></i><br/>
                         <span className="nav__name">Home</span>
-                    </a>
+                    </Link>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#about" className="nav__link">
-                        <i className='bx bx-user nav__icon'></i><br/>
-                        <span className="nav__name">About</span>
-                    </a>
+                    <Link to={"##"} className="nav__link">
+                        <i className='bx bx-slideshow nav__icon'></i><br/>
+                        <span className="nav__name">Class</span>
+                    </Link>
                 </li>
 
                 <li className="nav__item">
-                    <a href="#skills" className="nav__link">
-                        <i className='bx bx-book-alt nav__icon'></i><br/>
+                    <Link to={"##"} className="nav__link">
+                        <i className='bx bxs-bar-chart-alt-2 nav__icon'></i><br/>
                         <span className="nav__name">Skills</span>
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="nav__item">
-                    <a href="#portfolio" className="nav__link">
-                        <i className='bx bx-briefcase-alt nav__icon'></i><br/>
-                        <span className="nav__name">Portfolio</span>
-                    </a>
+                    <Link to={"##"} className="nav__link">
+                        <i className='bx bx-chat nav__icon'></i><br/>
+                        <span className="nav__name">Chat</span>
+                    </Link>
                 </li>
 
                 <li className="nav__item">
-                    <a href="#contactme" className="nav__link">
-                        <i className='bx bx-message-square-detail nav__icon'></i><br/>
-                        <span className="nav__name">Contactme</span>
-                    </a>
+                    <Link to={"##"} className="nav__link">
+                        <i className='bx bxs-user nav__icon'></i><br/>
+                        <span className="nav__name">About</span>
+                    </Link>
                 </li>
             </ul>
         </div>
