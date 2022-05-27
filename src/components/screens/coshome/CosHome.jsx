@@ -84,11 +84,18 @@ const Createrlink = styled.span`
 `;
 const Cosbody = styled.div`
     display: flex;
-    padding-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    padding-left: 100px;
+    @media (max-width: 800px) {
+        display: block;
+        padding: 10px 10px 20% 10px;
+}
 `;
 const Demovid = styled.div`
-    width: 100vh;
     text-align: center;
+    margin:0 auto;
 `;
 const Vidhead = styled.span`
     color: black;
@@ -96,7 +103,6 @@ const Vidhead = styled.span`
 `;
 const VidDis = styled.p``;
 const Docdiv = styled.div`
-    width: 100vh;
     color: black;
     text-align: center;  
     padding-top: 2%;
