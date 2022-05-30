@@ -9,9 +9,6 @@ function Wlcm() {
   return (
     <div className="banner">
       <div className="content-welcom">
-        <p>
-          
-        </p>
         <h1 className="title">
         <ReactTypical className="typical"
           loop={Infinity}
