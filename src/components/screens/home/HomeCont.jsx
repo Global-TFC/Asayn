@@ -30,7 +30,7 @@ const Homecontent = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     @media (max-width: 768px) {
     padding-top: 70px;
     padding-left: 10px;

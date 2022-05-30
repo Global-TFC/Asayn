@@ -13,9 +13,7 @@ function Cosdata() {
                <Coscard/>
                <Coscard/>
                <Coscard/>
-               <Coscard/>
-               <Coscard/>
-               <Coscard/>
+               
            </Pagedata>
        </Datahome>
   )
@@ -28,7 +26,9 @@ const Pagehead = styled.h2`
     color: #000000;
 `;
 const Pagedata = styled.div`
-    background-color: #df1111;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 `;
 
 export default Cosdata;

@@ -54,7 +54,10 @@ const Cosheader = styled.div`
     text-align: center;
     height: 300px;
 `;
-const Cosbanner = styled.img``;
+const Cosbanner = styled.img`
+    width: 80%;
+    height: 140px;
+`;
 const Cosname = styled.span`
     color: black;
     font-weight: 900;

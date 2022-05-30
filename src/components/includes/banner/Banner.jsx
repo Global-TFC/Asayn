@@ -13,6 +13,7 @@ function Banner() {
 }
 
 const BannerSection = styled.div`
+    height: 10%;
     padding-top: 80px;
     padding-left: 90px;
     padding-right: 15px;
@@ -20,6 +21,9 @@ const BannerSection = styled.div`
     display: none;
     }
 `;
-const BannerImage = styled.img``;
+const BannerImage = styled.img`
+  width: 100%;
+  height: 140px;
+`;
 
 export default Banner;
