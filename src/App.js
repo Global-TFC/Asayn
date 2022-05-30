@@ -9,6 +9,7 @@ import Home from "./components/pages/home page/HomePage";
 import "./theme/GlobalStyles"
 import GlobalStyles from "./theme/GlobalStyles";
 import Coswel from "./components/pages/home page/Coswel";
+import Cosdata from "./components/screens/cosdata/Cosdata";
 
 
 
@@ -24,8 +25,10 @@ function App() {
           <Route path="signup" element={<SigninUp />} />
           <Route path="home"  >
             <Route index element={<Home />} />
-            <Route path="cosname" element={<Coswel/>}>
-          </Route>
+            <Route path="cosname">
+              <Route index element={<Coswel/>} />
+              <Route path="class" element={<Cosdata/>} />
+            </Route>
           </Route>
           <Route path="*" element={<Noscreen />} />
 

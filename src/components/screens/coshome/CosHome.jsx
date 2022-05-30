@@ -1,4 +1,5 @@
 import React, { } from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components'
 import ReactReadMoreReadLess from "react-read-more-read-less";
 import "./coshome.css"
@@ -33,7 +34,9 @@ function CosHome() {
                     >
                         {longtext}
                     </ReactReadMoreReadLess> <br />
-                    <GetBtn>Get Course</GetBtn>
+                    <Link to={"class"}>
+                        <GetBtn>Get Course</GetBtn>
+                    </Link>
                 </Docdiv>
             </Cosbody>
             <CosFooter>
