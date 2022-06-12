@@ -1,13 +1,12 @@
 import React from "react";
-import "./Home.css";
-import Mobile from './Mobile'
+import './Home.css'
+
   
 
 
 function Home() {
   return (
     <div className="container">
-     <Mobile />
       <div className="right">
         <button className="content">
           Hi, <br />
