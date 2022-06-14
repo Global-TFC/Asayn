@@ -1,5 +1,4 @@
 .left {
-    
     width: 40%;
     height: 720px;
     background-color: #fff;
@@ -11,44 +10,52 @@
     height: auto;
     left: 15%;
 }
+
 .title {
     position: absolute;
     top: 8%;
     left: 14%
 }
+
 .btn0 {
     position: absolute;
     top: 20%;
     left: 19%;
 }
+
 .btn1 {
     position: absolute;
     top: 20%;
     left: 23%;
 }
+
 .btn2 {
     position: absolute;
     top: 20%;
     left: 27%;
 }
+
 .ques {
     position: absolute;
     top: 32%;
     left: 20%;
     width: 175px;
 }
+
 .ques1 {
     position: absolute;
     top: 37%;
     left: 20%;
     width: 175px;
 }
+
 .ques2 {
     position: absolute;
     top: 42%;
     left: 20%;
     width: 175px;
 }
+
 .content {
     padding: 90px;
     margin-left: 80px;

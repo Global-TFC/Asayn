@@ -1,14 +1,14 @@
 import React from "react";
-import './Home.css'
+import styled from "styled-components";
+
 
   
 
 
 function Home() {
   return (
-    <div className="container">
-      <div className="right">
-        <button className="content">
+      <Left>
+        <Wellcome >
           Hi, <br />
           Welcome To Knolsort <br />
           Knolsort is a free video sharing website that makes it easy to watch
@@ -18,11 +18,22 @@ function Home() {
           hours of video every month.<br /> If you've ever watched a video online,
           there's a good chance it was a YouTube video.<br /> For example, almost all
           of the video tutorials on our website are actually YouTube videos!
-        </button>
-      </div>
+        </Wellcome>
+      </Left>
       
-    </div>
   );
 }
+
+const Left = styled.p`
+  width: 40%;
+  height: 720px;
+  background-color: #fff;
+  float: left; 
+`
+
+const Wellcome = styled.p`
+  border: 1px solid black;
+  padding: 3%;  
+`
 
 export default Home;
