@@ -1,8 +1,7 @@
 import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// import Navbar from "./components/includes/navbar/Navbar"
-import Wlcm from "./components/screens/welcome/Home/Home";
+import Navbar from "./components/includes/navbar/Navbar"
 import Noscreen from "./components/screens/404/404screen";
 import SigninUp from "./components/screens/signin-up/SigninUp";
 import Home from "./components/pages/home page/HomePage";
@@ -22,17 +21,18 @@ function App() {
     <Fragment>
       <GlobalStyles />
       <Router>
-        <Mobile />
+        <Navbar/>
         <Routes>
           
-          <Route path="/" element={<Wlcm />} />
-          <Route path="About" element={<About />} />
-          <Route path="Contact" element={<Contact />} />
-          <Route path="What" element={<What />} />
-          <Route path="Benfit" element={<Benfit />} />
-          <Route path="Use" element={<Use />} />
-          <Route path="signin" element={<SigninUp />} />
-          <Route path="signup" element={<SigninUp />} />
+          <Route path="/" element={<Mobile />} >
+            <Route path="About" element={<About />} />
+            <Route path="Contact" element={<Contact />} />
+            <Route path="What" element={<What />} />
+            <Route path="Benfit" element={<Benfit />} />
+            <Route path="Use" element={<Use />} />
+            <Route path="signin" element={<SigninUp />} />
+            <Route path="signup" element={<SigninUp />} />
+          </Route>
           <Route path="home">
             <Route index element={<Home />} />
             <Route path="cosname">

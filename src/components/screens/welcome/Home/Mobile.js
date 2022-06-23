@@ -7,7 +7,7 @@ function Mobile() {
   return (
     <div className = "mobile-container">
       <h1 className="title">Knolsort</h1>
-    <div className="left">
+      <div className="left">
         {/* <img className="mobile" src={Logo} alt="mobail-pic"/> */}
         <div className='mob-links'>
           <Link to="/" className="btn0">Home</Link>
@@ -17,12 +17,11 @@ function Mobile() {
         <Link to="What" className="ques">What is Knolsort?</Link>
         <Link  to="Benfit" className="ques1">What is Benfit of this?</Link>
         <Link to="Use" className="ques2">How to Use</Link>
-        <Link to={"/signin"} className="btn-login">Login</Link>
-        <Link to={"/home"} className="btn-signin">Sign In</Link>
+        <Link to={"/signup"} className="btn-login">Login</Link>
+        <Link to={"/signin"} className="btn-signin">Sign In</Link>
       </div>
-      </div>
-
-
+      
+    </div>
   )
 }
 

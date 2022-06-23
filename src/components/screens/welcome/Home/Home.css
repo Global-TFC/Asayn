@@ -25,12 +25,6 @@
     left: 14%
 }
 
-.mob-links {
-    position: ;
-    left: 300px;
-    top: 170px;
-}
-
 .btn0 {
     position: absolute;
     top: 5%;
@@ -73,7 +67,7 @@
 .btn-login {
     position: absolute;
     top: 50%;
-    left: 18%;
+    left: 17%;
 }
 
 .btn-signin {
