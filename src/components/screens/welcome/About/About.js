@@ -4,7 +4,7 @@ import './About.css'
 function About() {
   return (
     <div>
-        <button className='content'>This is About Page</button>
+        <button  className='content'>This is About Page</button>
     </div>
   )
 }

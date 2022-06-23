@@ -1,5 +1,5 @@
 .mobile-container {
-    width: 100vh;
+    width: 50%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     background-position: 2px (adjust with your preference);
     background-repeat: no-repeat;
     position: relative;
+    float: left;
 }
 
 .left {
@@ -97,3 +98,4 @@
     color: #e6e6e6;
     background-color: rgb(255, 109, 11);
 }
+

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/includes/navbar/Navbar"
+// import Navbar from "./components/includes/navbar/Navbar"
 import Noscreen from "./components/screens/404/404screen";
 import SigninUp from "./components/screens/signin-up/SigninUp";
 import Home from "./components/pages/home page/HomePage";
@@ -9,6 +9,7 @@ import "./theme/GlobalStyles";
 import GlobalStyles from "./theme/GlobalStyles";
 import Coswel from "./components/pages/home page/Coswel";
 import Cosdata from "./components/screens/cosdata/Cosdata";
+import WlcmHome from "./components/screens/welcome/Home/Home"
 import Mobile from "./components/screens/welcome/Home/Mobile";
 import About from "./components/screens/welcome/About/About";
 import Contact from "./components/screens/welcome/Contact/Contact";
@@ -21,10 +22,10 @@ function App() {
     <Fragment>
       <GlobalStyles />
       <Router>
-        <Navbar/>
+        <Mobile />
         <Routes>
           
-          <Route path="/" element={<Mobile />} >
+         <Route index element={<WlcmHome/>} /> 
             <Route path="About" element={<About />} />
             <Route path="Contact" element={<Contact />} />
             <Route path="What" element={<What />} />
@@ -32,9 +33,9 @@ function App() {
             <Route path="Use" element={<Use />} />
             <Route path="signin" element={<SigninUp />} />
             <Route path="signup" element={<SigninUp />} />
-          </Route>
+          
           <Route path="home">
-            <Route index element={<Home />} />
+            <Route index element={ <Home/>} />
             <Route path="cosname">
               <Route index element={<Coswel />} />
               <Route path="class" element={<Cosdata />} />
