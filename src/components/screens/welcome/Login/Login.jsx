@@ -1,10 +1,11 @@
 import React from 'react'
+import "./sign.css"
 
 function Login() {
   return (
     <>
     <div className="forms-container">
-          <div className="signin-signup">
+          <div >
         <form action="#" className="sign-in-form">
               <h2 className="title">Login</h2>
               <div className="input-field">

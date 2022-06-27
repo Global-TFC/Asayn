@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Navbar from "./components/includes/navbar/Navbar"
 import Noscreen from "./components/screens/404/404screen";
-import SigninUp from "./components/screens/signin-up/SigninUp";
+import SigninUp from "./components/screens/welcome/Login/Singup";
+import Login from "./components/screens/welcome/Login/Login";
 import Home from "./components/pages/home page/HomePage";
 import "./theme/GlobalStyles";
 import GlobalStyles from "./theme/GlobalStyles";
@@ -32,7 +33,7 @@ function App() {
             <Route path="Benfit" element={<Benfit />} />
             <Route path="Use" element={<Use />} />
             <Route path="signin" element={<SigninUp />} />
-            <Route path="signup" element={<SigninUp />} />
+            <Route path="signup" element={<Login />} />
           
           <Route path="home">
             <Route index element={ <Home/>} />
