@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Noscreen from "./components/pages/404/404screen";
 import "./theme/GlobalStyles";
 import GlobalStyles from "./theme/GlobalStyles";
-import Home from "./components/pages/Students Home/Home/Home"
+import HomePage from "./components/screens/StuScreens/HomePage";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/">
-            <Route index element={ <Home/>} />
+            <Route index element={ <HomePage/>} />
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>
