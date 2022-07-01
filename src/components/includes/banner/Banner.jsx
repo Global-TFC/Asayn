@@ -14,8 +14,8 @@ function Banner() {
 
 const BannerSection = styled.div`
     height: 10%;
-    padding-top: 80px;
-    padding-left: 90px;
+    padding-top: 10px;
+    padding-left: 10px;
     padding-right: 15px;
     @media (max-width: 768px) {
     display: none;

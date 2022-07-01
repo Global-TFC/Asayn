@@ -8,7 +8,7 @@ function Sidebar() {
         <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
                 <li className="nav__item">
-                    <Link to={"/home"}  className="nav__link active-link">
+                    <Link to={"/"}  className="nav__link active-link">
                         <i className='bx bxs-graduation nav__icon'></i><br/>
                         <span className="nav__name">Home</span>
                     </Link>
