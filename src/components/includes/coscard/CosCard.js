@@ -1,11 +1,13 @@
 import React from "react";
-import {Card , Button } from 'react-bootstrap'
+import {Card} from 'react-bootstrap'
+import { Link } from "react-router-dom";
 
 
 
 function CosCard() {
   return (
-    <div  >
+    <div >
+      <Link  to="Enroll">
       <Card style={{ width: "18rem" , float:"left"  , margin:"5px" }}>
         <Card.Img variant="top" src="https://img.youtube.com/vi/jSWwKABiFik/maxresdefault.jpg" />
         <Card.Body>
@@ -18,7 +20,7 @@ function CosCard() {
           </Card.Text>
         </Card.Body>
       </Card>
-      
+      </Link>
     </div>
   );
 }

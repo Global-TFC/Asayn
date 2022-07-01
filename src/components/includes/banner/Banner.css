@@ -87,7 +87,7 @@
     width: 2rem;
     border-radius: 50%;
     position: absolute;
-    z-index: 999;
+    z-index: 99;
   }
   .arrow:hover {
     background-color: #fff;
