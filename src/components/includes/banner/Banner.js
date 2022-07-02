@@ -49,7 +49,7 @@ const Banner = () => {
           >
             {index === currentSlide && (
               <div>
-                <img src={slide.image} alt="slide" className="image" />
+                <Bgimg src={slide.image} alt="slide" className="image" />
                 <div className="content">
                   <h2>{slide.heading}</h2>
                   <p>{slide.desc}</p>
@@ -66,7 +66,12 @@ const Banner = () => {
 };
 
 const SlideBar = styled.div`
-  width: 90%;
+  border: 3px solid white;
+  border-radius: 20px;
+  
+`
+const Bgimg = styled.img`
+  height: 100%;
 `
 
 export default Banner;
