@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "./Slider-Data";
+import styled from "styled-components";
 import "./Banner.css";
 
 const Banner = () => {
@@ -37,7 +38,7 @@ const Banner = () => {
   }, [currentSlide]);
 
   return (
-    <div className="slider">
+    <SlideBar className="slider">
       <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
       <AiOutlineArrowRight className="arrow next" onClick={nextSlide} />
       {sliderData.map((slide, index) => {
@@ -60,8 +61,12 @@ const Banner = () => {
           </div>
         );
       })}
-    </div>
+    </SlideBar>
   );
 };
+
+const SlideBar = styled.div`
+  width: 90%;
+`
 
 export default Banner;
