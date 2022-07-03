@@ -11,7 +11,7 @@ function EnrollPage() {
   return (
     <>
     <Navbar />
-    <Sidebar />
+    
     <Enrollscreen >
       <Enroll />
     </Enrollscreen>

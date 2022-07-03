@@ -256,10 +256,12 @@
      width: 100%;
      max-width: 100%;
      height: 0;
+    
  }
  
  .video-react.video-react-16-9 {
      padding-top: 56.25%;
+    
  }
  
  .video-react.video-react-4-3 {
@@ -1162,3 +1164,8 @@
      -webkit-transform: translateY(-30px);
      transform: translateY(-30px);
  }
+.promo-bg {
+    width: 100%;
+    height:  400px;
+    background-color: #cdedff;
+}
