@@ -20,19 +20,12 @@ function EnrollPage() {
 }
 
 const Enrollscreen =styled.div`
-    padding-top: 10px;
-    padding-left: 6%;
-    /* padding-right: 50px;
-    padding-bottom: 20px; */
-    
+    padding: 10px;
     align-items: center;
     justify-content: center;
     @media (max-width: 768px) {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 60px;
-    width: 100%;
+      padding-bottom: 60px;
+      width: 100%;
     }
 `
 

@@ -14,7 +14,6 @@ function About() {
 
 const AboutUser = styled.div`
   text-align: center;
-  width: 60%;
   @media (max-width: 768px) {
     width: 100%;
   }
