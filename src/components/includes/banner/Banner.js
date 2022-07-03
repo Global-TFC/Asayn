@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+// import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "./Slider-Data";
 import styled from "styled-components";
 import "./Banner.css";
@@ -39,8 +39,9 @@ const Banner = () => {
 
   return (
     <SlideBar className="slider">
-      <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
-      <AiOutlineArrowRight className="arrow next" onClick={nextSlide} />
+      {/* arows is commented */}
+      {/* <AiOutlineArrowLeft className="arrow prev" onClick={prevSlide} />
+      <AiOutlineArrowRight className="arrow next" onClick={nextSlide} /> */}
       {sliderData.map((slide, index) => {
         return (
           <div
@@ -50,12 +51,12 @@ const Banner = () => {
             {index === currentSlide && (
               <div>
                 <Bgimg src={slide.image} alt="slide" className="image" />
-                <div className="content">
+                {/* <div className="content">
                   <h2>{slide.heading}</h2>
                   <p>{slide.desc}</p>
                   <hr />
                   <button className="btn">Get Started</button>
-                </div>
+                </div> */}
               </div>
             )}
           </div>
@@ -71,7 +72,6 @@ const SlideBar = styled.div`
   
 `
 const Bgimg = styled.img`
-  height: 100%;
 `
 
 export default Banner;
