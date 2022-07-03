@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from 'react-bootstrap'
 import styled from 'styled-components'
 import About from '../../../includes/cource about/About'
 import Promo from '../../../includes/video player/Promo'
@@ -10,6 +11,11 @@ function Enroll() {
     <AboutDiv>
       <About />
     </AboutDiv>
+    <div class="container pt-3 ">
+        <div class="col-md-12 text-center ">
+            <button type="button" class="btn btn-primary w-50">Join</button>
+        </div>
+    </div>
     </>
   )
 }
