@@ -21,7 +21,7 @@ function Promo() {
 
 const VideoPlayer = styled.div`
   width: 50%;
-  @media (max-width: 768px;) {
+  @media (max-width: 768px) {
     width: 100%;
     
   }

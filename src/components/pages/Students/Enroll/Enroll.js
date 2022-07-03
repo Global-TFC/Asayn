@@ -15,7 +15,7 @@ function Enroll() {
 }
 
 const AboutDiv = styled.div`
-  padding: 90px 10px;
+  padding: 10px 10px;
   background-color: #cdedff;
 `
 

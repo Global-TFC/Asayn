@@ -11,7 +11,7 @@ function EnrollPage() {
   return (
     <>
     <Navbar />
-    
+    <Sidebar/>
     <Enrollscreen >
       <Enroll />
     </Enrollscreen>
@@ -24,12 +24,11 @@ const Enrollscreen =styled.div`
     padding-left: 6%;
     /* padding-right: 50px;
     padding-bottom: 20px; */
-    display: flex;
-    flex-wrap: wrap;
+    
     align-items: center;
     justify-content: center;
     @media (max-width: 768px) {
-    padding-top: 70px;
+    padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 60px;
