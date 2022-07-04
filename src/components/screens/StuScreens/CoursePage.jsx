@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
+import Navbar from '../../includes/navbar/Navbar'
+import Sidebar from '../../includes/navbar/Sidebar'
 
 function CoursePage() {
   return (
     <div>
+        <Navbar/>
+        <Sidebar/>
         <CoursePageBanner></CoursePageBanner>
         <CourseName>Cource Promo</CourseName>
         <CourseDistributer>@distruputer name</CourseDistributer>
