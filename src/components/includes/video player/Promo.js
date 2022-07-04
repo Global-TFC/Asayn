@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {Player} from "video-react"
+import BackButten from "../back butten/BackButten";
 // import {AiTwotoneLike} from "react-icons/ai"
 import "./video-react.css"
 
@@ -9,6 +10,7 @@ function Promo() {
   return (
     <>
     <div className="promo-bg">
+      <BackButten/>
       <CourseName>Cource Promo</CourseName>
       <CourseDistributer>@distruputer name</CourseDistributer>
     <VideoPlayer>
@@ -32,9 +34,10 @@ const VideoPlayer = styled.div`
 
 const CourseName = styled.h1`
   padding-left: 10px;
+  display: inline;
 `
 const CourseDistributer = styled.p`
-  padding-left: 20px;
+  padding-left: 40px;
 `
 
 export default Promo;
