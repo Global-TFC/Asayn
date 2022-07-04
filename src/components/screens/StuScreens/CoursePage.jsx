@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import BackButten from '../../includes/back butten/BackButten'
 import Navbar from '../../includes/navbar/Navbar'
 import Sidebar from '../../includes/navbar/Sidebar'
+import './CourcePage.css'
+import { Link } from 'react-router-dom'
+
 
 function CoursePage() {
   return (
-    <div>
+    <Fragment>
         <Navbar/>
         <Sidebar/>
         <CoursePageBanner>
@@ -14,8 +17,12 @@ function CoursePage() {
         <BackButten/>
         <CourseName>Cource Promo</CourseName>
         <CourseDistributer>@distruputer name</CourseDistributer>
-        
-    </div>
+        <Link to={"/community"}>
+          <button className='right'>Join Communty</button>
+          </Link>
+          
+         
+     </Fragment>
   )
 }
 
@@ -33,6 +40,8 @@ const CourseName = styled.h1`
 `
 const CourseDistributer = styled.p`
   padding-left: 40px;
+  
 `
+
 
 export default CoursePage
