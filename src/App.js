@@ -6,6 +6,7 @@ import "./theme/GlobalStyles";
 import GlobalStyles from "./theme/GlobalStyles";
 import HomePage from "./components/screens/StuScreens/HomePage";
 import EnrollPage from "./components/screens/StuScreens/EnrollPage";
+import CoursePage from "./components/screens/StuScreens/CoursePage";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/">
             <Route index element={ <HomePage/>} />
             <Route path="Enroll" element={<EnrollPage/>} />
+            <Route path="coursenamehome" element={<CoursePage/>}/>
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>

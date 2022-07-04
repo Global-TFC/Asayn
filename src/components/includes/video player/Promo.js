@@ -10,6 +10,7 @@ function Promo() {
     <>
     <div className="promo-bg">
       <CourseName>Cource Promo</CourseName>
+      <CourseDistributer>@distruputer name</CourseDistributer>
     <VideoPlayer>
       <Player autoPlay muted playsInline poster="./Thumb.jpg" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
     </VideoPlayer>
@@ -31,6 +32,9 @@ const VideoPlayer = styled.div`
 
 const CourseName = styled.h1`
   padding-left: 10px;
+`
+const CourseDistributer = styled.p`
+  padding-left: 20px;
 `
 
 export default Promo;
