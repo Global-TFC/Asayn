@@ -35,9 +35,15 @@ const VideoPlayer = styled.div`
 const CourseName = styled.h1`
   padding-left: 10px;
   display: inline;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `
 const CourseDistributer = styled.p`
   padding-left: 40px;
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `
 
 export default Promo;
