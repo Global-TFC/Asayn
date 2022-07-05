@@ -11,18 +11,18 @@ import Vidcard from '../../includes/vedio card/Vidcard'
 function CoursePage() {
   return (
     <Fragment>
-        <Navbar/>
-        <Sidebar/>
-        <CoursePageBanner>
-        </CoursePageBanner>
-        <BackButten/>
-        <CourseName>Cource Promo</CourseName>
-        <Link to={"/community"}>
-          <JoinBtn className='right'>Join Communty</JoinBtn>
-        </Link>
-        <CourseDistributer>@distruputer name</CourseDistributer>         
-        <Vidcard/>
-     </Fragment>
+      <Navbar />
+      <Sidebar />
+      <CoursePageBanner>
+      </CoursePageBanner>
+      <BackButten />
+      <CourseName>Cource Promo</CourseName>
+      <Link to={"/community"}>
+        <JoinBtn className='right'>Join Communty</JoinBtn>
+      </Link>
+      <CourseDistributer>@distruputer name</CourseDistributer>
+      <Vidcard />
+    </Fragment>
   )
 }
 
