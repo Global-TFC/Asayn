@@ -7,6 +7,7 @@ import GlobalStyles from "./theme/GlobalStyles";
 import HomePage from "./components/screens/StuScreens/HomePage";
 import EnrollPage from "./components/screens/StuScreens/EnrollPage";
 import CoursePage from "./components/screens/StuScreens/CoursePage";
+import VedioPlayPage from "./components/pages/Students/VedioPlay/VedioPlayPage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route index element={ <HomePage/>} />
             <Route path="Enroll" element={<EnrollPage/>} />
             <Route path="coursenamehome" element={<CoursePage/>}/>
+            <Route path="vedioplayname" element={<VedioPlayPage/>}/>
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>
