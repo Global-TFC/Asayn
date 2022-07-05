@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../../../includes/banner/Banner'
+import Banner from '../../../includes/banner/BannerSlider'
 import Card from '../../../includes/coscard/Card'
 
 

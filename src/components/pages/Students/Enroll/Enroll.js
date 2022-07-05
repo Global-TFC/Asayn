@@ -2,13 +2,16 @@ import React from 'react'
 import { Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { Player } from 'video-react'
 import About from '../../../includes/cource about/About'
 import Promo from '../../../includes/video player/Promo'
+import Player1 from '../../../../assets/player/player'
 
 function Enroll() {
   return (
     <>
     < Promo/>
+    <Player1 />
     <AboutDiv>
       <About />
     </AboutDiv>

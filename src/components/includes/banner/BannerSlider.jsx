@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import styled from 'styled-components'
+import './BannerSlider.css'
 
 function BannerSlider() {
     return (
@@ -8,7 +9,7 @@ function BannerSlider() {
         <Carousel fade>
             <Carousel.Item>
                 <img
-                    className="d-block w-100 "
+                    className="d-block w-100  "
                     src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1024,h_576/https://blog.snappa.com/wp-content/uploads/2020/02/gaming-channel-art-1-1024x576.jpg"
                     alt="First slide"
                 />
