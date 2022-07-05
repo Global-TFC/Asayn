@@ -5,6 +5,7 @@ import Navbar from '../../includes/navbar/Navbar'
 import Sidebar from '../../includes/navbar/Sidebar'
 import './CourcePage.css'
 import { Link } from 'react-router-dom'
+import Vidcard from '../../includes/vedio card/Vidcard'
 
 
 function CoursePage() {
@@ -20,7 +21,7 @@ function CoursePage() {
           <JoinBtn className='right'>Join Communty</JoinBtn>
         </Link>
         <CourseDistributer>@distruputer name</CourseDistributer>         
-         
+        <Vidcard/>
      </Fragment>
   )
 }
