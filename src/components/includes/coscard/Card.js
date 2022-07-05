@@ -6,20 +6,6 @@ function Card() {
   return (
     <CardDiv>
         <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
-        <CosCard />
     </CardDiv>
   )
 }
