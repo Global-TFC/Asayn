@@ -5,7 +5,7 @@ import styled from "styled-components";
 import "./Banner.css";
 
 const Banner = () => {
- const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const slideLength = sliderData.length;
 
   const autoScroll = true;
