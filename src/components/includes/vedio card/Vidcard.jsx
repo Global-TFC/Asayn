@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function Vidcard() {
   return (
-    <Link to="/vedioplayname">
+    <Link to="vedioplayname">
       <Container fluid>
         <Row xs={1} md={3} lg={4} className="g-4">
           {Array.from({ length: 8 }).map((_, idx) => (
