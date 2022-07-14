@@ -19,7 +19,8 @@ function App() {
           <Route path="/">
             <Route index element={<HomePage />} />
             <Route path="Enroll" element={<EnrollPage />} />
-            <Route path="coursenamehome" element={<CoursePage />}>
+            <Route path="coursenamehome" >
+              <Route index element={<CoursePage />}/>
               <Route path="vedioplayname" element={<VedioPlayPage />} />
             </Route>
           </Route>

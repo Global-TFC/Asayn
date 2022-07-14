@@ -16,7 +16,7 @@ function Player1() {
   }
   
   const VideoPlayer = styled.div`
-    width: 50%;
+    width: 100%;
     margin: auto;
     padding: 10px;
     @media (max-width: 768px) {
