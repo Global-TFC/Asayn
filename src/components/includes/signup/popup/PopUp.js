@@ -14,13 +14,13 @@ function PopUp() {
           <p>I am a</p>
         </div>
         <div className="title">
-          <Link to="/teacher-sign">
+          <Link to="/teacher-signup">
             <button className="st-btn">
               <img className="st" src={Teacher} alt="" />
               <span>Teacher</span>
             </button>
           </Link>
-          <Link to="/student-sign">
+          <Link to="/student-signup">
             <button className="st-btn">
               <img className="st" src={Student} alt="" />
               <span>Student</span>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../Teacher-SignUp/SignUp.css";
 
@@ -51,7 +52,7 @@ function Signup() {
             </button>
           </div>
           <p className="forgot-password text-right">
-            Already registered <a href="/sign-in">sign in?</a>
+          Already have an account? <Link to="/student-signin"><a>sign in</a></Link>
           </p>
         </form>
       </div>
