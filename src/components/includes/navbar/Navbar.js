@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink, } from 'react-router-dom'
 import "./Navbar.css"
 import "../../../theme/GlobalStyles"
 
@@ -10,10 +10,16 @@ function Navbar() {
             <header className="header" id="header">
                 <nav className="nav ">
                     <Link to={"/"} className="nav__logo">Asayn</Link>
-                    <div className="notti_links" >
-                        <i className='bx bx-home nav__icon'></i>
-                        <i className='bx bx-message-square-detail nav__icon'></i>
-                        <i className='bx bx-bell nav__icon'></i>
+                    <div className="notti_links " >
+                        <span class="dropdown">
+                            <button class="dropbtn"><i class='bx bxs-user nav__icon topnavlist' ></i><i class='bx bxs-chevron-down nav__icon'></i></button>
+                            <div class="dropdown-content">
+                                <NavLink to="/user">Login</NavLink>
+                                <NavLink to="/user">Sign Up</NavLink>
+                            </div>
+                        </span>
+                        <Link to="#"><i class='bx bxs-bell-ring  nav__icon topnavlist'></i></Link>
+                        <Link to="#"><i class='bx bxs-chat bx-tada nav__icon topnavlist' ></i></Link>
                     </div>
                 </nav>
             </header>

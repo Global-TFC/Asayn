@@ -2,18 +2,19 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import styled from 'styled-components';
 
-function BackButten() {
+function ClossButten() {
   const navigate = useNavigate();
   return (
     <>
-      <BackB onClick={() => navigate(-1)}><i class='bx bx-left-arrow-alt'></i></BackB>
+      <ClosB onClick={() => navigate(-1)}>x</ClosB>
       
     </>
   )
 }
 
-const BackB = styled.span`
+const ClosB = styled.span`
     font-size: 30px;
-`
+    cursor: pointer;
+    `
 
-export default BackButten
+export default ClossButten

@@ -1,62 +1,63 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import ClossButten from "../../closs butten/ClossButten";
+import Navbar from "../../navbar/Navbar";
+import Sidebar from "../../navbar/Sidebar";
 import "./SignUp.css";
 
 function SignUp() {
   return (
-    <div className="modalBackground">
-      <div className="modalContainer">
-        <div className="titleCloseBtn">
+    <>
+    <Navbar/>
+    <Sidebar/>
+      <div className="modalBackground">
+        <div className="modalContainer">
+          <div className="titleCloseBtn">
+            <ClossButten />
+          </div>
+          <h3 className="signip">Register</h3>
+          <div className="body">
+            <p>As a Teacher</p>
+          </div>
+          <form>
+            <div className="mb-3">
+              <label>Name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Name"
+              />
+            </div>
+            <div className="mb-3">
+              <label>Email address</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Enter email"
+              />
+            </div>
+            <div className="mb-3">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control"
+                placeholder="Enter password"
+              />
+            </div>
+            <div className="d-grid">
+              <button type="submit" className="btn btn-primary">
+                Register
+              </button>
+            </div>
+            <p className="forgot-password text-center">
+              Already have an account? <Link to="tlogin">sign in</Link>
+            </p>
+          </form>
         </div>
-        <div className="body">
-          <p>I am a Teacher</p>
-        </div>
-        <form>
-          <h3 className="signip">Sign Up</h3>
-          <div className="mb-3">
-            <label>First name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="First name"
-            />
-          </div>
-          <div className="mb-3">
-            <label>Last name</label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Last name"
-            />
-          </div>
-          <div className="mb-3">
-            <label>Email address</label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter email"
-            />
-          </div>
-          <div className="mb-3">
-            <label>Password</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-            />
-          </div>
-          <div className="d-grid">
-            <button type="submit" className="btn btn-primary">
-              Sign Up
-            </button>
-          </div>
-          <p className="forgot-password text-right">
-          Already have an account? <Link to="/teacher-signin"><a>sign in</a></Link>
-          </p>
-        </form>
       </div>
-    </div>
+      <Outlet/>
+    </>
   );
 }
 

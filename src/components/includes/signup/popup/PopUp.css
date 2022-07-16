@@ -46,16 +46,17 @@
     text-align: center;
     font-family: cursive;
   }
-  
+
   .st {
-    width: 150px;
-    height: 150px;
-    
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+
   }
   @media only screen and (max-width: 550px) {
     .st {
-      width: 90px;
-      height: 95px;
+      width: 50px;
+      height: 50px;
     }  
     .modalContainer {
       width: 380px;
@@ -64,12 +65,13 @@
   
   
   .st-btn  {
-    color: black;
+    color: rgb(0, 89, 255);
     background-color: white;
     border-radius: 20px;
-    margin: 0 auto;
-    padding: 15px 32px;
-    font-size: 2rem;
-    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    padding: 10px;
+    border:1px solid rgb(0, 0, 0);
+    margin: auto 10px;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    box-shadow: rgba(97, 97, 97, 0.35) 10px 25px 95px;
+
   }
