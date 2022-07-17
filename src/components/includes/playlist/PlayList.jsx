@@ -8,7 +8,7 @@ import { Col, Row } from "react-bootstrap";
 const Playlist = () => {
   const [show, setShow] = useState(true);
   return (
-    <>
+    <Page>
       <ListButten onClick={() => setShow(prev => !prev)}>
         <CourseIcon src="https://images.unsplash.com/photo-1622322062536-895d869b09ff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="distressed Italian wall in pink and grey hues" />
         <CourseName>Course name</CourseName>
@@ -37,13 +37,16 @@ const Playlist = () => {
           </div>
         </PlayList>
       }
-    </>
+    </Page>
   );
 }
 
-const PlayList = styled.div`
-    
+const PlayList = styled.div``
+
+const Page = styled.div`
+  padding-bottom: 10%;
 `
+
 const ListButten = styled.div`
     width: 95%;
     border:1px solid black;
