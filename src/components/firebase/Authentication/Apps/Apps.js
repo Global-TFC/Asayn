@@ -9,7 +9,7 @@ import firebase from 'firebase/compat/app';
 function Apps() {
   const signInWithGoogle = e => {
     const provider = new firebase.auth.GoogleAuthProvider()
-    auth.signInWithPopup(provider)
+    auth.signInWithPopup(provider);
   };
   const signInWithFacebook = e => {
     const provider = new firebase.auth.FacebookAuthProvider()

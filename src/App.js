@@ -14,6 +14,7 @@ import RegisterTeacher from "./components/includes/signup/Teacher-SignUp/SignUp"
 import RegisterStudent from "./components/includes/signup/Student-SignUp/SignUp";
 import LoginTeacher from "./components/includes/signin/Teacher-SignIn/SignIn"
 import LoginStudent from "./components/includes/signin/Student-SignIn/SignIn"
+import Acadamy from "./components/screens/TeachScreens/Acadamy";
 
 
 function App() {
