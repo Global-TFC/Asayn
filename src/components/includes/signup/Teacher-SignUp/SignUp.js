@@ -21,7 +21,7 @@ function SignUp() {
           <div className="body">
             <p>As a Teacher</p>
           </div>
-          <form>
+          <div>
             <div className="mb-3">
               <label>Name</label>
               <input
@@ -54,8 +54,8 @@ function SignUp() {
             <p className="forgot-password text-center">
               Already have an account? <Link to="tlogin">sign in</Link>
             </p>
-            <Apps />
-          </form>
+            {<Apps />}
+          </div>
         </div>
       </div>
       <Outlet/>

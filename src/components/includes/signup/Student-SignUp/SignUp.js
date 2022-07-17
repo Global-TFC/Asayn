@@ -6,8 +6,12 @@ import ClossButten from "../../closs butten/ClossButten";
 import Navbar from "../../navbar/Navbar";
 import Sidebar from "../../navbar/Sidebar";
 import "../Teacher-SignUp/SignUp.css";
+import {auth} from '../../../firebase/Authentication/Apps/Firebase';
+import {useAuthState} from 'react-firebase-hooks/auth';
+
 
 function SignUp() {
+  const [user] = useAuthState(auth);
   return (
     <>
     <Navbar/>
@@ -21,7 +25,7 @@ function SignUp() {
           <div className="body">
             <p>As a Student</p>
           </div>
-          <form>
+          <div>
             <div className="mb-3">
               <label>Name</label>
               <input
@@ -54,8 +58,8 @@ function SignUp() {
             <p className="forgot-password text-center">
               Already have an account? <Link to="slogin">sign in</Link>
             </p>
-            <Apps />
-          </form>
+            {<Apps />}
+          </div>
           <Outlet/>
         </div>
       </div>
