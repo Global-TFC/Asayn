@@ -1,0 +1,17 @@
+.sign-in-btn {
+    color: black;
+    background-color: #dddddd;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 32px;
+    font-size: 1.2rem;
+    
+}
+.sign-in-btn img {
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+}
+p {
+    text-align: center;
+}

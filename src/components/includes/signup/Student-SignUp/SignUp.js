@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Apps from "../../../firebase/Authentication/Apps/Apps";
 import ClossButten from "../../closs butten/ClossButten";
 import Navbar from "../../navbar/Navbar";
 import Sidebar from "../../navbar/Sidebar";
@@ -53,6 +54,7 @@ function SignUp() {
             <p className="forgot-password text-center">
               Already have an account? <Link to="slogin">sign in</Link>
             </p>
+            <Apps />
           </form>
           <Outlet/>
         </div>
