@@ -15,7 +15,7 @@ function Sidebar() {
                 </li>
 
                 <li class="nav__item">
-                    <Link to={"##"} className="nav__link">
+                    <Link to={"/mycourse"} className="nav__link">
                         <i className='bx bx-slideshow nav__icon'></i><br/>
                         <span className="nav__name">Class</span>
                     </Link>

@@ -14,7 +14,7 @@ import RegisterTeacher from "./components/includes/signup/Teacher-SignUp/SignUp"
 import RegisterStudent from "./components/includes/signup/Student-SignUp/SignUp";
 import LoginTeacher from "./components/includes/signin/Teacher-SignIn/SignIn"
 import LoginStudent from "./components/includes/signin/Student-SignIn/SignIn"
-import Acadamy from "./components/screens/TeachScreens/Acadamy";
+import Acadamy from "./components/screens/StuScreens/Acadamy";
 
 
 function App() {
@@ -42,6 +42,7 @@ function App() {
                 <Route path="slogin" element={<LoginStudent />} />
               </Route>
             </Route>
+            <Route path="mycourse" element={<Acadamy/> }/>
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>
