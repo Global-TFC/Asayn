@@ -1,15 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ClossButten from '../../closs butten/ClossButten'
-import Navbar from '../../navbar/Navbar'
-import Sidebar from '../../navbar/Sidebar'
-
 
 function SignIn() {
   return (
     <>
-      <Navbar/>
-      <Sidebar/>
       <div className="modalBackground">
         <div className="modalContainer">
           <div className="titleCloseBtn">

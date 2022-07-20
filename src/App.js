@@ -16,6 +16,8 @@ import LoginTeacher from "./components/includes/signin/Teacher-SignIn/SignIn"
 import LoginStudent from "./components/includes/signin/Student-SignIn/SignIn"
 import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
+import Navbar from "./components/includes/navbar/Navbar";
+import Sidebar from "./components/includes/navbar/Sidebar";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
     <Fragment>
       <GlobalStyles />
       <Router>
+        <Navbar/>
+        <Sidebar/>
         <Routes>
           <Route path="/" >
             <Route index element={<HomePage />} />

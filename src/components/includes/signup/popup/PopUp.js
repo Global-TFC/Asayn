@@ -3,14 +3,10 @@ import "./PopUp.css";
 import Teacher from "./teacher.png";
 import Student from "./student.png";
 import { Link } from "react-router-dom";
-import Navbar from "../../navbar/Navbar";
-import Sidebar from "../../navbar/Sidebar";
 
 function PopUp() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
       <div className="modalBackground">
         <div className="colorbg" >
           <div className="modalContainer">

@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Player1 from '../../../includes/player/player'
-import Navbar from '../../../includes/navbar/Navbar'
-import Sidebar from '../../../includes/navbar/Sidebar'
 import BackButten from '../../../includes/back butten/BackButten'
 import Playlist from '../../../includes/playlist/PlayList'
 import { Link } from 'react-router-dom'
@@ -10,8 +8,6 @@ import { Link } from 'react-router-dom'
 function VedioPlayPage() {
   return (
     <>
-      <Navbar />
-      <Sidebar />
       <BackButten />
       <CourseName>VedioTitle</CourseName>
       <Link to="/acadamyname" >

@@ -1,8 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import BackButten from '../../includes/back butten/BackButten'
-import Navbar from '../../includes/navbar/Navbar'
-import Sidebar from '../../includes/navbar/Sidebar'
 import './CourcePage.css'
 import { Link } from 'react-router-dom'
 import Vidcard from '../../includes/vedio card/Vidcard'
@@ -11,8 +9,6 @@ import Vidcard from '../../includes/vedio card/Vidcard'
 function CoursePage() {
   return (
     <Fragment>
-      <Navbar />
-      <Sidebar />
       <CoursePageBanner>
       </CoursePageBanner>
       <BackButten />

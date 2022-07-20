@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { Image, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Col, Row } from "react-bootstrap";
 
 

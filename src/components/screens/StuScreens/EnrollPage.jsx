@@ -1,17 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import '../../../theme/GlobalStyles'
-
-import Navbar from '../../includes/navbar/Navbar'
-import Sidebar from '../../includes/navbar/Sidebar'
 import Enroll from '../../pages/Students/Enroll/Enroll'
 
 
 function EnrollPage() {
   return (
     <>
-    <Navbar />
-    <Sidebar/>
     <Enrollscreen >
       <Enroll />
     </Enrollscreen>

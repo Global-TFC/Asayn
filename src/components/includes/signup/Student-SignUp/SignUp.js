@@ -3,19 +3,14 @@ import { Link, Outlet } from "react-router-dom";
 import "../../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Apps from "../../../firebase/Authentication/Apps/Apps";
 import ClossButten from "../../closs butten/ClossButten";
-import Navbar from "../../navbar/Navbar";
-import Sidebar from "../../navbar/Sidebar";
 import "../Teacher-SignUp/SignUp.css";
 import {auth} from '../../../firebase/Authentication/Apps/Firebase';
 import {useAuthState} from 'react-firebase-hooks/auth';
-
 
 function SignUp() {
   const [user] = useAuthState(auth);
   return (
     <>
-    <Navbar/>
-    <Sidebar/>
       <div className="modalBackground">
         <div className="modalContainer">
           <div className="titleCloseBtn">
