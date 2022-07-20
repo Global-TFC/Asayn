@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import BackButten from "../../includes/back butten/BackButten";
 import Dropdown from "../../includes/drop down/DropDown";
 import Navbar from "../../includes/navbar/Navbar";
 import Sidebar from "../../includes/navbar/Sidebar";
@@ -10,7 +11,7 @@ function Acadamy() {
       <Navbar />
       <Sidebar />
       <AcadamyBanner></AcadamyBanner>
-      <h1>Acadamy Name</h1>
+      <h1><BackButten/>Acadamy Name</h1>
       <AcadamyBio>Bio</AcadamyBio>
       <Dropdown />
       <Vidcard />

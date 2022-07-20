@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import BackButten from "../back butten/BackButten";
 
@@ -6,13 +7,15 @@ import BackButten from "../back butten/BackButten";
 function Promo() {
   return (
     <>
-    <div className="promo-bg">
-      <BackButten/>
-      <CourseName>Cource Promo</CourseName>
-      <CourseDistributer>@distruputer name</CourseDistributer>
-   
-  </div>
-  </>
+      <div className="promo-bg">
+        <BackButten />
+        <CourseName>Cource Promo</CourseName>
+        <Link to="/acadamyname" >
+          <CourseDistributer>@distruputer name</CourseDistributer>
+        </Link>
+
+      </div>
+    </>
   );
 }
 

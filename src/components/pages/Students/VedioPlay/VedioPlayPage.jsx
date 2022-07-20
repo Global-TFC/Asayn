@@ -5,6 +5,7 @@ import Navbar from '../../../includes/navbar/Navbar'
 import Sidebar from '../../../includes/navbar/Sidebar'
 import BackButten from '../../../includes/back butten/BackButten'
 import Playlist from '../../../includes/playlist/PlayList'
+import { Link } from 'react-router-dom'
 
 function VedioPlayPage() {
   return (
@@ -13,7 +14,9 @@ function VedioPlayPage() {
       <Sidebar />
       <BackButten />
       <CourseName>VedioTitle</CourseName>
-      <CourseDistributer>@course_name</CourseDistributer>
+      <Link to="/acadamyname" >
+        <CourseDistributer>@distruputer name</CourseDistributer>
+      </Link>
       <VedioPage>
         <SideOne>
           <Player1 />

@@ -20,7 +20,9 @@ function CoursePage() {
       <Link to={"/community"}>
         <JoinBtn className='right'>Join Communty</JoinBtn>
       </Link>
+      <Link to="/acadamyname" >
       <CourseDistributer>@distruputer name</CourseDistributer>
+      </Link>
       <Vidcard />
     </Fragment>
   )
