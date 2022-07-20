@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ClossButten from '../../closs butten/ClossButten'
+import Apps from "../../../firebase/Authentication/Apps/Apps";
+
 
 function SignIn() {
   return (
@@ -42,7 +44,7 @@ function SignIn() {
             <p className="forgot-password text-center">
             Don't have an account? <Link to="/tregister">Sign up</Link>
             </p>
-           
+            {<Apps />}
           </div>
         </div>
       </div>
