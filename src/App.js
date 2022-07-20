@@ -31,18 +31,12 @@ function App() {
               <Route path="courcepage" element={<CoursePage />} />
               <Route path="vedioplayname" element={<VedioPlayPage />} />
             </Route>
-            <Route path="user">
-              <Route index element={<PopUp />} />
-              <Route path="tregister"  >
-                <Route index element={<RegisterTeacher />} />
-                <Route path="tlogin" element={<LoginTeacher />} />
-              </Route>
-              <Route path="sregister" >
-                <Route index element={<RegisterStudent />} />
-                <Route path="slogin" element={<LoginStudent />} />
-              </Route>
-            </Route>
-            <Route path="mycourse" element={<Acadamy/> }/>
+            <Route path="user" element={<PopUp />} />
+            <Route path="tregister" element={<RegisterTeacher />} />
+            <Route path="tlogin" element={<LoginTeacher />} />
+            <Route path="register" element={<RegisterStudent />} />
+            <Route path="login" element={<LoginStudent />} />
+            <Route path="mycourse" element={<Acadamy />} />
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>

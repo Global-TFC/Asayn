@@ -52,7 +52,7 @@ function SignUp() {
               </button>
             </div>
             <p className="forgot-password text-center">
-              Already have an account? <Link to="tlogin">sign in</Link>
+              Already have an account? <Link to="/tlogin">sign in</Link>
             </p>
             {<Apps />}
           </div>

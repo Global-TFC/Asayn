@@ -20,13 +20,13 @@ function PopUp() {
               <h3>I am a</h3>
             </div>
             <div className="title ">
-              <Link to="tregister">
+              <Link to="/tregister">
                 <button className="st-btn">
                   <img className="st" src={Teacher} alt="" />
                   <span>Teacher</span>
                 </button>
               </Link>
-              <Link to="sregister">
+              <Link to="/register">
                 <button className="st-btn">
                   <img className="st" src={Student} alt="" />
                   <span>Student</span>
