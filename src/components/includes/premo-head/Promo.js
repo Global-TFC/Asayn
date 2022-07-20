@@ -13,7 +13,6 @@ function Promo() {
         <Link to="/acadamyname" >
           <CourseDistributer>@distruputer name</CourseDistributer>
         </Link>
-
       </div>
     </>
   );
