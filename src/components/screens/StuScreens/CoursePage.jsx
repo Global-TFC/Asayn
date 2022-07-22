@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import BackButten from '../../includes/back butten/BackButten'
-import './CourcePage.css'
 import { Link } from 'react-router-dom'
 import Vidcard from '../../includes/vedio card/Vidcard'
 
@@ -13,7 +12,7 @@ function CoursePage() {
       </CoursePageBanner>
       <BackButten />
       <CourseName>Cource Promo</CourseName>
-      <Link to={"/community"}>
+      <Link to="/community">
         <JoinBtn className='right'>Join Communty</JoinBtn>
       </Link>
       <Link to="/acadamyname" >

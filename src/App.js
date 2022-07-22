@@ -18,6 +18,8 @@ import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
 import Navbar from "./components/includes/navbar/Navbar";
 import Sidebar from "./components/includes/navbar/Sidebar";
+import Community from "./components/firebase/Cloud Firestore/community/Chat";
+
 
 
 function App() {
@@ -29,13 +31,14 @@ function App() {
         <Sidebar/>
         <Routes>
           <Route path="/" >
-            <Route index element={<HomePage />} />
+            <Route index element={<HomePage/>} />
             <Route path="Enroll" element={<EnrollPage />} />
             <Route path="coursenamehome">
               <Route index element={<CoursePage />} />
               <Route path="courcepage" element={<CoursePage />} />
               <Route path="vedioplayname" element={<VedioPlayPage />} />
-            </Route>
+              
+            </Route><Route path="community" element={<Community />} />
             <Route path="user" element={<PopUp />} />
             <Route path="tregister" element={<RegisterTeacher />} />
             <Route path="tlogin" element={<LoginTeacher />} />
