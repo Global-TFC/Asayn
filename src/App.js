@@ -18,6 +18,7 @@ import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
 import Navbar from "./components/includes/navbar/Navbar";
 import Sidebar from "./components/includes/navbar/Sidebar";
+import About from "./components/screens/StuScreens/About";
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
             <Route path="login" element={<LoginStudent />} />
             <Route path="mycourse" element={<Mycourse />} />
             <Route path="acadamyname" element={<Acadamy/>}/>
+            <Route path="aboutme" element={<About/>}/>
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>
