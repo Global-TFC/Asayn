@@ -22,7 +22,7 @@ function Sidebar() {
                 </li>
 
                 <li className="nav__item">
-                    <Link to={"##"} className="nav__link">
+                    <Link to={"/chat"} className="nav__link">
                         <i className='bx bx-chat nav__icon'></i><br/>
                         <span className="nav__name">Chat</span>
                     </Link>

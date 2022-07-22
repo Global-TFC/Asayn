@@ -20,6 +20,7 @@ import Navbar from "./components/includes/navbar/Navbar";
 import Sidebar from "./components/includes/navbar/Sidebar";
 import Community from "./components/firebase/Cloud Firestore/community/Chat";
 import About from "./components/screens/StuScreens/About";
+import ChatPage from "./components/screens/ChatPage/ChatPage";
 
 
 
@@ -48,6 +49,7 @@ function App() {
             <Route path="mycourse" element={<Mycourse />} />
             <Route path="acadamyname" element={<Acadamy/>}/>
             <Route path="aboutme" element={<About/>}/>
+            <Route path="chat" element={<ChatPage/>}/>
           </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>
