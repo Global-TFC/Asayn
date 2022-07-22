@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Image, Row } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
-import image from "../../../assets/images.png"
+import image from "../../../assets/sprofile.webp"
 import styled from 'styled-components';
 import Accordion from 'react-bootstrap/Accordion';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -11,12 +11,12 @@ function About() {
     return (
         <>
             <Container fluid>
-                <Row xs={1} md={2} lg={3} className="g-4" >
+                <Row xs={1} md={2} lg={3} className="g-4 p-3" >
                     <AlignCenter className='text-center'>
-                        <Image roundedCircle src={image} />
+                        <Image roundedCircle  src={image} />
                     </AlignCenter>
                     <Form.Group className="mb-3" >
-                        <Form.Label>Full Name</Form.Label>
+                        <Form.Label className='pt-3'>Full Name</Form.Label>
                         <Form.Control placeholder="Person Name" disabled />
                         <Form.Label>Mail</Form.Label>
                         <Form.Control placeholder="example@mail.com" disabled />
@@ -56,6 +56,8 @@ function About() {
 const AlignCenter = styled.div`
     padding: 10px;
     align-content: center;
+    border-radius: 50;
+    
 `
 
 export default About
