@@ -18,12 +18,9 @@ import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
 import Navbar from "./components/includes/navbar/Navbar";
 import Sidebar from "./components/includes/navbar/Sidebar";
-<<<<<<< HEAD
 import Community from "./components/firebase/Cloud Firestore/community/Chat";
-
-=======
 import About from "./components/screens/StuScreens/About";
->>>>>>> c2518661ae0f26505f9d17770d94800c00c900a6
+
 
 
 function App() {
