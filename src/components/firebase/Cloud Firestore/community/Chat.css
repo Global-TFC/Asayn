@@ -61,7 +61,7 @@
 }
 
 .acadamy {
-    height: 100%;
+    max-height: 100vh;
     background-color: #cce6ff;
     float: left;
 }

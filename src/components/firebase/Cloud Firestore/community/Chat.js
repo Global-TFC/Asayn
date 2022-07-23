@@ -9,7 +9,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Navbar from 'react-bootstrap/Navbar';
 import styled from "styled-components";
 
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -45,8 +44,9 @@ function Chat() {
   return (
     <Container fluid>
       <Row>
-        <Col md="2" className="acadamy">
+        <Col md="4" className="acadamy">
           <ListGroup as="ol" numbered>
+          {Array.from({ length: 15 }).map((_, idx) => (
             <ListGroup.Item
               as="li"
               className="d-flex justify-content-between align-items-start"
@@ -59,47 +59,15 @@ function Chat() {
                 14
               </Badge>
             </ListGroup.Item>
-            <ListGroup.Item
-              as="li"
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <div className="fw-bold">Subheading</div>
-                Cras justo odio
-              </div>
-              <Badge bg="primary" pill>
-                14
-              </Badge>
-            </ListGroup.Item>
-            <ListGroup.Item
-              as="li"
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <div className="fw-bold">Subheading</div>
-                Cras justo odio
-              </div>
-              <Badge bg="primary" pill>
-                14
-              </Badge>
-            </ListGroup.Item>
+          ))}
           </ListGroup>
         </Col>
         <Col>
+          <ChatNav  >
+            <ChatName href="#home">Chat Name</ChatName>
+          </ChatNav>
           <div >
-            <ChatNav  >
-            <Navbar className="position-fixed" style={{width:"100%"}} >
-              <Container>
-                <Navbar.Brand href="#home">Chat Name</Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse className="justify-content-end">
-                  <Navbar.Text>
-                    ::::
-                  </Navbar.Text>
-                </Navbar.Collapse>
-              </Container>
-            </Navbar>
-            </ChatNav>
+
             <main>
               {messages &&
                 messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
@@ -134,8 +102,13 @@ const TypeTab = styled.div`
   bottom: 0;
   right: 0;
 `
-const ChatNav = styled.div`
+const ChatNav = styled.h4`
+  background-color: #8b8b8b;
+`
 
+const ChatName = styled.span``
+const BarEnd = styled.span`
+  color: black;
 `
 
 export default Chat;
