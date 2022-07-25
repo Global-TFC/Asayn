@@ -2,7 +2,7 @@
     background-color: #282c34;
     width: 60%;
     float: left;
-    overflow-x: hidden;
+    align-items: center;
 }
 
 .message {

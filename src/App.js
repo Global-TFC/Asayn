@@ -40,7 +40,8 @@ function App() {
               <Route path="courcepage" element={<CoursePage />} />
               <Route path="vedioplayname" element={<VedioPlayPage />} />
               
-            </Route><Route path="community" element={<Community />} />
+            </Route>
+            <Route path="community" element={<Community />} />
             <Route path="user" element={<PopUp />} />
             <Route path="tregister" element={<RegisterTeacher />} />
             <Route path="tlogin" element={<LoginTeacher />} />
