@@ -13,6 +13,7 @@ import styled from "styled-components";
 
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import ChatMessage from "./ChatMessage";
+import { Link } from "react-router-dom";
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -46,20 +47,22 @@ function Chat() {
       <Row>
         <Col md="4" className="acadamy">
           <ListGroup as="ol" numbered>
-          {Array.from({ length: 15 }).map((_, idx) => (
-            <ListGroup.Item
-              as="li"
-              className="d-flex justify-content-between align-items-start"
-            >
-              <div className="ms-2 me-auto">
-                <div className="fw-bold">Subheading</div>
-                Cras justo odio
-              </div>
-              <Badge bg="primary" pill>
-                14
-              </Badge>
-            </ListGroup.Item>
-          ))}
+            {Array.from({ length: 15 }).map((_, idx) => (
+              <Link to="">
+                <ListGroup.Item
+                  as="li"
+                  className="d-flex justify-content-between align-items-start"
+                >
+                  <div className="ms-2 me-auto">
+                    <div className="fw-bold">Subheading</div>
+                    Cras justo odio
+                  </div>
+                  <Badge bg="primary" pill>
+                    14
+                  </Badge>
+                </ListGroup.Item>
+              </Link>
+            ))}
           </ListGroup>
         </Col>
         <Col>
