@@ -21,11 +21,13 @@ import Sidebar from "./components/includes/navbar/Sidebar";
 import Community from "./components/firebase/Cloud Firestore/community/Chat";
 import About from "./components/screens/StuScreens/About";
 import ChatPage from "./components/screens/ChatPage/ChatPage";
-
-
+import Container from 'react-bootstrap/Container';
+// accadamypage routs in CRF file
+import CRF from "./CreaterRouts";
 
 function App() {
   return (
+    <Container fluid>
     <Fragment>
       <GlobalStyles />
       <Router>
@@ -51,10 +53,14 @@ function App() {
             <Route path="aboutme" element={<About/>}/>
             <Route path="chat" element={<ChatPage/>}/>
           </Route>
+          <Route path="/creater" >
+            <Route index element={<CRF/>} />
+          </Route>
           <Route path="*" element={<Noscreen />} />
         </Routes>
       </Router>
     </Fragment>
+    </Container>
   );
 }
 

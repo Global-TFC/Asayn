@@ -4,7 +4,6 @@ import "firebase/compat/firestore";
 import 'firebase/compat/auth';
 import 'firebase/compat/analytics';
 import './Chat.css'
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Badge from 'react-bootstrap/Badge';
@@ -43,7 +42,6 @@ function Chat() {
   };
 
   return (
-    <Container fluid>
       <Row>
         <Col md="4" className="acadamy">
           <ListGroup as="ol" numbered>
@@ -96,7 +94,7 @@ function Chat() {
       </Row>
 
 
-    </Container>
+  
   );
 }
 
