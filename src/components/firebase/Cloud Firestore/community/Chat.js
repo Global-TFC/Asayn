@@ -9,7 +9,6 @@ import styled from "styled-components";
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import ChatMessage from "./ChatMessage";
 
-import Groups from "./Groups";
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -39,12 +38,11 @@ function Chat() {
   };
 
   return (
-       <div >
-       
+       <div className="modalBackground">
+       <div className="modalContainer">
           <ChatNav  >
             <ChatName href="#home">Chat Name</ChatName>
           </ChatNav>
-        <Groups />
           <Body>
             <main>
               {messages &&
@@ -67,6 +65,7 @@ function Chat() {
               </form>
             </TypeTab>
             </Body>
+            </div>
           </div>
         
   );
@@ -75,7 +74,6 @@ function Chat() {
 const TypeTab = styled.div`
   position: fixed;
   bottom: 0;
-  right: 0;
 `
 const ChatNav = styled.h4`
   background-color: #8b8b8b;

@@ -24,6 +24,7 @@ import ChatPage from "./components/screens/ChatPage/ChatPage";
 import Container from 'react-bootstrap/Container';
 // accadamypage routs in CRF file
 import CRF from "./CreaterRouts";
+import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 
 function App() {
   return (
@@ -43,7 +44,7 @@ function App() {
               <Route path="vedioplayname" element={<VedioPlayPage />} />
               
             </Route>
-            <Route path="community" element={<Community />} />
+            <Route path="community" element={<Groups />} />
             <Route path="user" element={<PopUp />} />
             <Route path="tregister" element={<RegisterTeacher />} />
             <Route path="tlogin" element={<LoginTeacher />} />
