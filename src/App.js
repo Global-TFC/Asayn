@@ -53,7 +53,7 @@ function App() {
             <Route path="mycourse" element={<Mycourse />} />
             <Route path="acadamyname" element={<Acadamy/>}/>
             <Route path="aboutme" element={<About/>}/>
-            <Route path="chat" element={<ChatPage/>}/>
+            <Route path="chat" element={<Groups/>}/>
           </Route>
           <Route path="/creater" >
             <Route index element={<CRF/>} />
