@@ -4,15 +4,12 @@ import "firebase/compat/firestore";
 import 'firebase/compat/auth';
 import 'firebase/compat/analytics';
 import './Chat.css'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Badge from 'react-bootstrap/Badge';
-import ListGroup from 'react-bootstrap/ListGroup';
 import styled from "styled-components";
 
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import ChatMessage from "./ChatMessage";
-import { Link } from "react-router-dom";
+
+import Groups from "./Groups";
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -42,33 +39,13 @@ function Chat() {
   };
 
   return (
-      <Row>
-        <Col md="4" className="acadamy">
-          <ListGroup as="ol" numbered>
-            {Array.from({ length: 15 }).map((_, idx) => (
-              <Link to="">
-                <ListGroup.Item
-                  as="li"
-                  className="d-flex justify-content-between align-items-start"
-                >
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">Subheading</div>
-                    Cras justo odio
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
-              </Link>
-            ))}
-          </ListGroup>
-        </Col>
-        <Col>
+       <div >
+       
           <ChatNav  >
             <ChatName href="#home">Chat Name</ChatName>
           </ChatNav>
-          <div >
-
+        <Groups />
+          <Body>
             <main>
               {messages &&
                 messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
@@ -89,12 +66,9 @@ function Chat() {
                 </button>
               </form>
             </TypeTab>
+            </Body>
           </div>
-        </Col>
-      </Row>
-
-
-  
+        
   );
 }
 
@@ -105,6 +79,10 @@ const TypeTab = styled.div`
 `
 const ChatNav = styled.h4`
   background-color: #8b8b8b;
+`
+const Body = styled.div`
+  width: 95%;
+  
 `
 
 const ChatName = styled.span``
