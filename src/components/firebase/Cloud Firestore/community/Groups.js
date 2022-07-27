@@ -10,30 +10,30 @@ import './Chat.css'
 function Groups() {
   return (
 
-    <div className="modalBackground">
-      <div className="modalContainer">
-      <Container fluid>
-        <Row>
-          <Link to="/chat">
-            <Col md="4">
+    <div className="modalBackground ">
+      <div className="modalContainer boxsize">
+        <Container fluid>
+          <Row>
+            <Col className="chattabsize">
               {Array.from({ length: 30 }).map((_, idx) => (
-                <ListGroup.Item
-                  as="li"
-                  className="d-flex justify-content-between align-items-start"
-                >
-                  <div className="ms-2 me-auto">
-                    <div className="fw-bold">Subheading</div>
-                    Cras justo odio
-                  </div>
-                  <Badge bg="primary" pill>
-                    14
-                  </Badge>
-                </ListGroup.Item>
+                <Link to="/chat">
+                  <ListGroup.Item
+                    as="li"
+                    className="d-flex justify-content-between align-items-start"
+                  >
+                    <div className="ms-2 me-auto">
+                      <div className="fw-bold">Subheading</div>
+                      Cras justo odio
+                    </div>
+                    <Badge bg="primary" pill>
+                      14
+                    </Badge>
+                  </ListGroup.Item>
+                </Link>
               ))}
             </Col>
-          </Link>
-        </Row>
-      </Container>
+          </Row>
+        </Container>
       </div>
     </div>
   );
