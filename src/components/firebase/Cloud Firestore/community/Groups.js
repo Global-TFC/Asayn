@@ -14,9 +14,10 @@ function Groups() {
       <div className="modalContainer boxsize">
         <Container fluid>
           <Row>
+          <Link to="chatername">
             <Col className="chattabsize">
               {Array.from({ length: 30 }).map((_, idx) => (
-                <Link to="/chat">
+                
                   <ListGroup.Item
                     as="li"
                     className="d-flex justify-content-between align-items-start"
@@ -29,9 +30,10 @@ function Groups() {
                       14
                     </Badge>
                   </ListGroup.Item>
-                </Link>
+                
               ))}
             </Col>
+            </Link>
           </Row>
         </Container>
       </div>

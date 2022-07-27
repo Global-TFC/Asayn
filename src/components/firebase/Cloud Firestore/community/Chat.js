@@ -8,6 +8,7 @@ import styled from "styled-components";
 
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import ChatMessage from "./ChatMessage";
+import BackButten from "../../../includes/back butten/BackButten";
 
 
 const auth = firebase.auth();
@@ -41,9 +42,11 @@ function Chat() {
        <div className="modalBackground">
        <div className="modalContainer">
           <ChatNav  >
+            <BackButten/>
             <ChatName href="#home">Chat Name</ChatName>
           </ChatNav>
           <Body>
+
             <main>
               {messages &&
                 messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
@@ -74,18 +77,34 @@ function Chat() {
 const TypeTab = styled.div`
   position: fixed;
   bottom: 0;
+  width: 500px;
+  @media (max-width: 768px) {
+    bottom: 50px;
+    width: 98%;
+    left: 20px;
+  }
 `
 const ChatNav = styled.h4`
-  background-color: #8b8b8b;
+  background-color: #4bb7ff;
+  border-radius: 20px;
+  position: fixed;
+  top: 10;
+  padding-right: 20px;
+  z-index: 10;
 `
 const Body = styled.div`
-  width: 95%;
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-bottom: 70px;
+  }
   
 `
 
-const ChatName = styled.span``
-const BarEnd = styled.span`
-  color: black;
+const ChatName = styled.span`
+  font-family: 'Courier New', Courier, monospace;
 `
+
 
 export default Chat;

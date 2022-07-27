@@ -29,39 +29,42 @@ import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 function App() {
   return (
     <Container fluid>
-    <Fragment>
-      <GlobalStyles />
-      <Router>
-        <Navbar/>
-        <Sidebar/>
-        <Routes>
-          <Route path="/" >
-            <Route index element={<HomePage/>} />
-            <Route path="Enroll" element={<EnrollPage />} />
-            <Route path="coursenamehome">
-              <Route index element={<CoursePage />} />
-              <Route path="courcepage" element={<CoursePage />} />
-              <Route path="vedioplayname" element={<VedioPlayPage />} />
-              
+      <Fragment>
+        <GlobalStyles />
+        <Router>
+          <Navbar />
+          <Sidebar />
+          <Routes>
+            <Route path="/" >
+              <Route index element={<HomePage />} />
+              <Route path="Enroll" element={<EnrollPage />} />
+              <Route path="coursenamehome">
+                <Route index element={<CoursePage />} />
+                <Route path="courcepage" element={<CoursePage />} />
+                <Route path="vedioplayname" element={<VedioPlayPage />} />
+
+              </Route>
+              <Route path="community" element={<Groups />} />
+              <Route path="user" element={<PopUp />} />
+              <Route path="tregister" element={<RegisterTeacher />} />
+              <Route path="tlogin" element={<LoginTeacher />} />
+              <Route path="register" element={<RegisterStudent />} />
+              <Route path="login" element={<LoginStudent />} />
+              <Route path="mycourse" element={<Mycourse />} />
+              <Route path="acadamyname" element={<Acadamy />} />
+              <Route path="aboutme" element={<About />} />
+              <Route path="chat">
+                <Route index element={<Groups />} />
+                <Route path="chatername" element={<Community />} />
+              </Route>
             </Route>
-            <Route path="community" element={<Groups />} />
-            <Route path="user" element={<PopUp />} />
-            <Route path="tregister" element={<RegisterTeacher />} />
-            <Route path="tlogin" element={<LoginTeacher />} />
-            <Route path="register" element={<RegisterStudent />} />
-            <Route path="login" element={<LoginStudent />} />
-            <Route path="mycourse" element={<Mycourse />} />
-            <Route path="acadamyname" element={<Acadamy/>}/>
-            <Route path="aboutme" element={<About/>}/>
-            <Route path="chat" element={<Groups/>}/>
-          </Route>
-          <Route path="/creater" >
-            <Route index element={<CRF/>} />
-          </Route>
-          <Route path="*" element={<Noscreen />} />
-        </Routes>
-      </Router>
-    </Fragment>
+            <Route path="/creater" >
+              <Route index element={<CRF />} />
+            </Route>
+            <Route path="*" element={<Noscreen />} />
+          </Routes>
+        </Router>
+      </Fragment>
     </Container>
   );
 }
