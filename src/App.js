@@ -25,6 +25,7 @@ import Container from 'react-bootstrap/Container';
 // accadamypage routs in CRF file
 import CRF from "./CreaterRouts";
 import Groups from "./components/firebase/Cloud Firestore/community/Groups";
+import TCource from "./components/pages/Accadamy/TCource";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
             </Route>
             <Route path="/creater" >
               <Route index element={<CRF />} />
+              <Route path="tcource" element={<TCource />} />
             </Route>
             <Route path="*" element={<Noscreen />} />
           </Routes>
