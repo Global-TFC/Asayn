@@ -8,7 +8,7 @@ function CrNavbar() {
         <>
             <header className="header" id="header">
                 <nav className="nav ">
-                    <Link to={"/"} className="nav__logo">Asayn</Link>
+                    <Link to={"/creater"} className="nav__logo">Asayn</Link>
                     <div className="notti_links " >
                         <span className="dropdown">
                             <button className="dropbtn"><i className='bx bxs-user nav__icon topnavlist' ></i><i className='bx bxs-chevron-down nav__icon'></i></button>

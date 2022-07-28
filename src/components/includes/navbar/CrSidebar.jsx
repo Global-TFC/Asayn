@@ -15,7 +15,7 @@ function CrSidebar() {
                 </li>
 
                 <li class="nav__item">
-                    <Link to={"/mycourse"} className="nav__link">
+                    <Link to={"tcourse"} className="nav__link">
                         <i className='bx bx-chalkboard nav__icon'></i><br/>
                         <span className="nav__name">Class</span>
                     </Link>
