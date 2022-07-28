@@ -26,6 +26,8 @@ import Container from 'react-bootstrap/Container';
 import CRF from "./CreaterRouts";
 import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 import TCource from "./components/pages/Accadamy/TCource";
+import Create from "./components/pages/Accadamy/cource create page/Create";
+import Alert from "./components/includes/Alert Box/Alert";
 
 function App() {
   return (
@@ -45,7 +47,7 @@ function App() {
                 <Route path="vedioplayname" element={<VedioPlayPage />} />
 
               </Route>
-              <Route path="community" element={<Groups />} />
+              <Route path="community" element={<Alert />} />
               <Route path="user" element={<PopUp />} />
               <Route path="tregister" element={<RegisterTeacher />} />
               <Route path="tlogin" element={<LoginTeacher />} />
@@ -62,7 +64,8 @@ function App() {
             <Route path="/creater" >
               <Route index element={<CRF />} />
               <Route path="tcource" element={<TCource />} />
-            </Route>
+             
+            </Route> <Route path="create" element={<TCource />} />
             <Route path="*" element={<Noscreen />} />
           </Routes>
         </Router>
