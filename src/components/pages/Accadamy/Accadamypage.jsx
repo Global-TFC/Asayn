@@ -3,7 +3,6 @@ import { Col, Row } from 'react-bootstrap'
 import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts'
 import styled from 'styled-components'
 import Accordion from 'react-bootstrap/Accordion';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import CardImage from "../../../assets/image2.webp"
 import Earnimage from "../../../assets/image3.webp"

@@ -4,6 +4,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { InputGroup } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import './Create.css'
 
 function OffCanvasExample({ ...props }) {
   const [show, setShow] = useState(false);
@@ -24,6 +25,15 @@ function OffCanvasExample({ ...props }) {
           <InputGroup className="mb-3">
             <InputGroup.Text id="inputGroup-sizing-default">
               Title
+            </InputGroup.Text>
+            <Form.Control
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="inputGroup-sizing-default">
+              Id
             </InputGroup.Text>
             <Form.Control
               aria-label="Default"
@@ -51,6 +61,7 @@ function OffCanvasExample({ ...props }) {
           style={{ height: '100px' }}
         />
         </FloatingLabel>
+        <CreateC>Create Cource</CreateC>
         </Offcanvas.Body>
       </Offcanvas>
     </>
@@ -74,5 +85,18 @@ border: none;
     margin-right: 15px;
   }
 `;
+const CreateC = styled.button`
+position: absolute;
+right: 30%;
+left: 35%;
+border-radius: 15px;
+padding: 10px 30px;
+margin-top: 10px;
+margin-right: 40px;
+background-color: #4183f5;
+color: white;
+font-weight: 700;
+border: none;
+`
 
 export default OffCanvasExample;
