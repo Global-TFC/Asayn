@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import CardImage from "../../../assets/image2.webp"
+import Earnimage from "../../../assets/image3.webp"
 
 const data = [
     {
@@ -53,7 +55,7 @@ const data = [
 
 function Accadamypage() {
     return (
-        <>
+        <Crhomepage>
             <Row>
                 <Col className='p-2'>
                     <HeaderBar className=" p-4">
@@ -69,6 +71,9 @@ function Accadamypage() {
                         <Accordion.Body>
                             <Widthset>
                                 <Col md="6">
+                                    <ChartHead>
+                                        Course Graph
+                                    </ChartHead>
                                     <div class="overflow-auto ">
 
                                         <LineChart
@@ -118,34 +123,80 @@ function Accadamypage() {
                             </Widthset>
                         </Accordion.Body>
                     </Accordion.Item>
-                    <Accordion.Item eventKey="">
-                        <Accordion.Header>Accordion Item #2</Accordion.Header>
+                </Accordion>
+            </Row>
+            <Row xs={1} md={3} lg={2} >
+                <Accordion defaultActiveKey={['0']} alwaysOpen>
+                    <Accordion.Item eventKey="0">
+                        <Accordion.Header>Creater Tips</Accordion.Header>
                         <Accordion.Body>
-                            <Widthset>
-                                <Card style={{ width: '18rem' }}>
-                                    <Card.Img variant="top" src="holder.js/100px180" />
-                                    <Card.Body>
-                                        <Card.Title>Card Title</Card.Title>
-                                        <Card.Text>
-                                            Some quick example text to build on the card title and make up the
-                                            bulk of the card's content.
-                                        </Card.Text>
-                                        <button variant="primary">Go somewhere</button>
-                                    </Card.Body>
-                                </Card>
-                            </Widthset>
+                            <Heightset>
+                                <Row xs={1} md={3} lg={4} className="overflow-auto" >
+                                    {Array.from({ length: 8 }).map((_, idx) => (
+                                        <Col style={{marginBottom: "20px"}} >
+                                            <Card style={{ display: "inline-block" }}>
+                                                <Card.Img thumbnail variant="top" src={Earnimage} />
+                                                <Card.Body>
+                                                    <Card.Title>Card Title</Card.Title>
+                                                    <Card.Text>
+                                                        Some quick example text to build on the card title and make up the
+                                                        bulk of the card's content.
+                                                    </Card.Text>
+                                                    <OpenButten variant="primary">Learn More</OpenButten>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </Heightset>
+                        </Accordion.Body>
+                    </Accordion.Item>
+                </Accordion>
+                <Accordion  >
+                    <Accordion.Item >
+                        <Accordion.Header>Earning scheme</Accordion.Header>
+                        <Accordion.Body>
+                            <Heightset>
+                                <Row xs={1} md={3} lg={4} className="overflow-auto" >
+                                    {Array.from({ length: 8 }).map((_, idx) => (
+                                        <Col style={{marginBottom: "20px"}} >
+                                            <Card style={{ display: "inline-block" }}>
+                                                <Card.Img thumbnail variant="top" src={CardImage} />
+                                                <Card.Body>
+                                                    <Card.Title>Card Title</Card.Title>
+                                                    <Card.Text>
+                                                        Some quick example text to build on the card title and make up the
+                                                        bulk of the card's content.
+                                                    </Card.Text>
+                                                    <OpenButten >Learn More</OpenButten>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    ))}
+                                </Row>
+                            </Heightset>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
             </Row>
-        </>
+            <Row  className="justify-content-s-center">
+                <FooterBar>
+                    <Col>hi</Col>
+                    <Col></Col>
+                </FooterBar>
+            </Row>
+        </Crhomepage>
     )
 }
-
+const Crhomepage = styled.div`
+    margin-bottom:20px;
+    @media (max-width: 768px) {
+        margin-bottom: 200px;
+    }
+`
 const HeaderBar = styled.div`
     border-radius: 20px;
     background-color: #d5f5ff;
-    align-content: space-between;
 `
 const CreaterName = styled.span`
     font-size: larger;
@@ -153,6 +204,8 @@ const CreaterName = styled.span`
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 `
 const Logout = styled.span`
+    position: absolute;
+    right: 20px;
     font-size: small;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 `
@@ -163,5 +216,38 @@ const Widthset = styled.div`
         display: block;
         margin-bottom: 50px;
     }
+`
+const Heightset = styled.div`
+    display: flex;
+    align-content: space-between;
+    height:370px ;
+    
+    @media (max-width: 768px) {
+        overflow-x: hidden;
+        height:420px ;
+        display: inline-flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+`
+const OpenButten = styled.button`
+    padding: 5px;
+    width: 100%;
+    font-size: smaller;
+    border-radius: 10px;
+    border: none;
+    background-color: #2bbcff;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+`
+const FooterBar = styled.div`
+    height: 200px;
+    background-color: #00427c;
+    border-radius: 20px ;
+    margin-top: 10px;
+`
+const ChartHead = styled.div`
+    height: 40px;
+    margin-top: 6px;
 `
 export default Accadamypage
