@@ -9,7 +9,6 @@ import styled from "styled-components";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import ChatMessage from "./ChatMessage";
 import BackButten from "../../../includes/back butten/BackButten";
-import { Button } from "react-bootstrap";
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -55,18 +54,23 @@ function Chat() {
 
           <TypeTab>
             <form onSubmit={sendMessage}>
-              <div>
-              <input
-                className="input"
-                value={formValue}
-                onChange={(e) => setFormValue(e.target.value)}
-                placeholder="Message"
-              />
-             
+              <div className="input-bg">
+                <input
+                  className="input"
+                  value={formValue}
+                  onChange={(e) => setFormValue(e.target.value)}
+                  placeholder="Message"
+                />
 
-              <button className="btn" type="submit" disabled={!formValue}>
-                🕊️
-              </button></div>
+                <label class="custom-file-upload">
+                  <input type="file" />
+                  📁
+                </label>
+
+                <button className="btn" type="submit" disabled={!formValue}>
+                  🕊️
+                </button>
+              </div>
             </form>
           </TypeTab>
         </Body>
