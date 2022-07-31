@@ -64,7 +64,7 @@ function App() {
             <Route path="/creater" >
               <Route index element={<CRF />} />
               <Route path="tcource" element={<TCource />} />
-             
+              
             </Route> <Route path="create" element={<TCource />} />
             <Route path="*" element={<Noscreen />} />
           </Routes>

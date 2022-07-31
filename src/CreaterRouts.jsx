@@ -5,7 +5,6 @@ import CrSidebar from './components/includes/navbar/CrSidebar';
 
 //accadamy page
 import Accadamypage from './components/pages/Accadamy/Accadamypage';
-import TCource from './components/pages/Accadamy/TCource';
 
 function CRF() {
   return (
@@ -14,7 +13,6 @@ function CRF() {
         <CrSidebar/>
         <Routes>
           <Route index element={<Accadamypage/>} />
-          <Route path="tcource" element={<TCource />} />
         </Routes>
     </>
   )

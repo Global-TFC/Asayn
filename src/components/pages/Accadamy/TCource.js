@@ -5,11 +5,15 @@ import { Col, Row } from "react-bootstrap";
 import image from '../../../assets/costhamb.webp'
 import styled from "styled-components";
 import OffCanvasExample from "./cource create page/Create";
+import CrNavbar from "../../includes/navbar/CrNavbar";
+import CrSidebar from "../../includes/navbar/CrSidebar";
 
 
 function TCource() {
   return (
     <>
+      <CrNavbar/>
+      <CrSidebar/>
       <Cource>
         <Title>Cources</Title>
         {["bottom"].map((placement, idx) => (

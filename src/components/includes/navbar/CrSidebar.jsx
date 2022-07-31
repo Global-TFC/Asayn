@@ -8,14 +8,14 @@ function CrSidebar() {
         <div className="nav__menu" id="nav-menu">
             <ul className="nav__list">
                 <li className="nav__item">
-                    <Link to={""}  className="nav__link active-link">
+                    <Link to={"/creater"}  className="nav__link active-link">
                         <i className='bx bxs-home nav__icon'></i><br/>
                         <span className="nav__name">Home</span>
                     </Link>
                 </li>
 
                 <li class="nav__item">
-                    <Link to={"tcourse"} className="nav__link">
+                    <Link to={"tcource"} className="nav__link">
                         <i className='bx bx-chalkboard nav__icon'></i><br/>
                         <span className="nav__name">Class</span>
                     </Link>
@@ -29,7 +29,7 @@ function CrSidebar() {
                 </li>
 
                 <li className="nav__item">
-                    <Link to={"/aboutme"} className="nav__link">
+                    <Link to={""} className="nav__link">
                         <i className='bx bxs-user nav__icon'></i><br/>
                         <span className="nav__name">About</span>
                     </Link>
