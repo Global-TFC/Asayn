@@ -97,6 +97,9 @@ function Accadamypage() {
                                     </div>
                                 </Col>
                                 <Col md="6">
+                                    <ChartHead>
+                                        Creater Grouth
+                                    </ChartHead>
                                     <div className="overflow-auto w-4">
                                         <BarChart
                                             width={500}
@@ -132,7 +135,7 @@ function Accadamypage() {
                             <Heightset>
                                 <Row xs={1} md={3} lg={4} className="overflow-auto" >
                                     {Array.from({ length: 8 }).map((_, idx) => (
-                                        <Col style={{marginBottom: "20px"}} >
+                                        <Col style={{ marginBottom: "20px" }} >
                                             <Card style={{ display: "inline-block" }}>
                                                 <Card.Img thumbnail variant="top" src={Earnimage} />
                                                 <Card.Body>
@@ -158,7 +161,7 @@ function Accadamypage() {
                             <Heightset>
                                 <Row xs={1} md={3} lg={4} className="overflow-auto" >
                                     {Array.from({ length: 8 }).map((_, idx) => (
-                                        <Col style={{marginBottom: "20px"}} >
+                                        <Col style={{ marginBottom: "20px" }} >
                                             <Card style={{ display: "inline-block" }}>
                                                 <Card.Img thumbnail variant="top" src={CardImage} />
                                                 <Card.Body>
@@ -178,7 +181,7 @@ function Accadamypage() {
                     </Accordion.Item>
                 </Accordion>
             </Row>
-            <Row  className="justify-content-s-center">
+            <Row className="justify-content-s-center">
                 <FooterBar>
                     <Col>hi</Col>
                     <Col></Col>

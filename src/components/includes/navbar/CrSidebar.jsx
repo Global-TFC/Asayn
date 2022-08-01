@@ -15,14 +15,14 @@ function CrSidebar() {
                 </li>
 
                 <li class="nav__item">
-                    <Link to={"tcource"} className="nav__link">
+                    <Link to={"/create"} className="nav__link">
                         <i className='bx bx-chalkboard nav__icon'></i><br/>
                         <span className="nav__name">Class</span>
                     </Link>
                 </li>
 
                 <li className="nav__item">
-                    <Link to={"/chat"} className="nav__link">
+                    <Link to={""} className="nav__link">
                         <i className='bx bx-chat nav__icon'></i><br/>
                         <span className="nav__name">Chat</span>
                     </Link>
