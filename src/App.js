@@ -10,10 +10,10 @@ import EnrollPage from "./components/screens/StuScreens/EnrollPage";
 import CoursePage from "./components/screens/StuScreens/CoursePage";
 import VedioPlayPage from "./components/pages/Students/VedioPlay/VedioPlayPage";
 import PopUp from "./components/includes/signup/popup/PopUp";
-import RegisterTeacher from "./components/includes/signup/Teacher-SignUp/SignUp";
-import RegisterStudent from "./components/includes/signup/Student-SignUp/SignUp";
-import LoginTeacher from "./components/includes/signin/Teacher-SignIn/SignIn"
-import LoginStudent from "./components/includes/signin/Student-SignIn/SignIn"
+import RegisterTeacher from "./components/pages/Accadamy/SignUp/SignUp";
+import RegisterStudent from "./components/pages/Students/SignUp/SignUp";
+import LoginTeacher from "./components/pages/Accadamy/SignIn/SignIn"
+import LoginStudent from "./components/pages/Students/Signin/Signin"
 import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
 import Navbar from "./components/includes/navbar/Navbar";

@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import CardImage from "../../../assets/image2.webp"
 import Earnimage from "../../../assets/image3.webp"
 
+
 const data = [
     {
         name: 'Page A',
