@@ -13,7 +13,7 @@ function About() {
             <Container fluid>
                 <Row xs={1} md={2} lg={3} className="g-4 p-3" >
                     <AlignCenter className='text-center'>
-                        <Image roundedCircle  src={image} />
+                        <Image roundedCircle src={image} />
                     </AlignCenter>
                     <Form.Group className="mb-3" >
                         <Form.Label className='pt-3'>Full Name</Form.Label>
@@ -25,28 +25,30 @@ function About() {
                     </Form.Group>
                 </Row>
                 <Row>
-                    <Accordion defaultActiveKey="0">
-                        <Accordion.Item eventKey="0">
-                            <Accordion.Header>Complited Course</Accordion.Header>
-                            <Accordion.Body>
-                                <ListGroup as="ol" numbered>
-                                    <ListGroup.Item as="li">Course Name</ListGroup.Item>
-                                    <ListGroup.Item as="li">Course Name</ListGroup.Item>
-                                    <ListGroup.Item as="li">Course Name</ListGroup.Item>
-                                </ListGroup>
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        <Accordion.Item eventKey="1">
-                            <Accordion.Header>Learning Course</Accordion.Header>
-                            <Accordion.Body>
-                                <ListGroup as="ol" numbered>
-                                    <ListGroup.Item as="li">Course Name</ListGroup.Item>
-                                    <ListGroup.Item as="li">Course Name</ListGroup.Item>
-                                    <ListGroup.Item as="li">Course Name</ListGroup.Item>
-                                </ListGroup>
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    </Accordion>
+                    <PaddingTop>
+                        <Accordion defaultActiveKey="0">
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>Complited Course</Accordion.Header>
+                                <Accordion.Body>
+                                    <ListGroup as="ol" numbered>
+                                        <ListGroup.Item as="li">Course Name</ListGroup.Item>
+                                        <ListGroup.Item as="li">Course Name</ListGroup.Item>
+                                        <ListGroup.Item as="li">Course Name</ListGroup.Item>
+                                    </ListGroup>
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>Learning Course</Accordion.Header>
+                                <Accordion.Body>
+                                    <ListGroup as="ol" numbered>
+                                        <ListGroup.Item as="li">Course Name</ListGroup.Item>
+                                        <ListGroup.Item as="li">Course Name</ListGroup.Item>
+                                        <ListGroup.Item as="li">Course Name</ListGroup.Item>
+                                    </ListGroup>
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
+                    </PaddingTop>
                 </Row>
             </Container>
         </>
@@ -58,6 +60,11 @@ const AlignCenter = styled.div`
     align-content: center;
     border-radius: 50;
     
+`
+const PaddingTop = styled.div`
+    @media (max-width: 768px) {
+        padding-bottom: 70px;
+  }
 `
 
 export default About
