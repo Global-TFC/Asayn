@@ -41,7 +41,7 @@ function Navbar() {
                     <Offcanvas.Body>
                         <Row>
                             {Array.from({ length: 8 }).map((_, idx) => (
-                                <Col md={6} className="mb-2">
+                                <Col md={12} className="mb-2">
                                     {/* <Button onClick={toggleShowMassage} className="mb-2">
                                     Toggle Toast <strong>with</strong> Animation
                                 </Button> */}
