@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { InputGroup } from "react-bootstrap";
+import { Col, InputGroup, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import './Create.css'
@@ -14,54 +14,69 @@ function OffCanvasExample({ ...props }) {
 
   return (
     <>
+
       <CreateBtn variant="primary" onClick={handleShow} className="me-2">
         Create
       </CreateBtn>
-      <Offcanvas show={show} onHide={handleClose} {...props}>
+      <Offcanvas className='canvabody' show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Create Cource</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="inputGroup-sizing-default">
-              Title
-            </InputGroup.Text>
+          <Row>
+            <Col md={12}>
+              <InputGroup className="mb-3">
+                <InputGroup.Text id="inputGroup-sizing-default">
+                  Title
+                </InputGroup.Text>
+                <Form.Control
+                  aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default"
+                />
+              </InputGroup>
+            </Col>
+            <Col md={12}>
+              <InputGroup className="mb-3">
+                <InputGroup.Text id="inputGroup-sizing-default">
+                  Id
+                </InputGroup.Text>
+                <Form.Control
+                  aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default"
+                />
+              </InputGroup>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Form.Select aria-label="Default select example">
+                <option>Category</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </Form.Select>
+            </Col>
+            <Col>
+              <Form.Select aria-label="Default select example">
+                <option>Language</option>
+                <option value="1">English</option>
+                <option value="2">Malayalam</option>
+                <option value="3">Tamil</option>
+              </Form.Select>
+            </Col>
+          </Row>
+          <InputGroup className="pt-3">
+          <FloatingLabel controlId="floatingTextarea2" label="About Course">
             <Form.Control
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
+              as="textarea"
+              placeholder="about your course"
+              style={{ minHeight: '100px' }}
             />
-          </InputGroup>
-          <InputGroup className="mb-3">
-            <InputGroup.Text id="inputGroup-sizing-default">
-              Id
-            </InputGroup.Text>
-            <Form.Control
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
+          </FloatingLabel>
           </InputGroup>
           <Form.Check inline label="free" name="group" type="radio" />
           <Form.Check inline label="paid" name="group" type="radio" />
-          <Form.Select aria-label="Default select example">
-            <option>Category</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </Form.Select>
-          <Form.Select aria-label="Default select example">
-            <option>Language</option>
-            <option value="1">English</option>
-            <option value="2">Malayalam</option>
-            <option value="3">Tamil</option>
-          </Form.Select>
-          <FloatingLabel controlId="floatingTextarea2" label="description">
-        <Form.Control
-          as="textarea"
-          placeholder="Leave a comment here"
-          style={{ height: '100px' }}
-        />
-        </FloatingLabel>
-        <CreateC>Create Cource</CreateC>
+          <CreateC>Create Cource</CreateC>
         </Offcanvas.Body>
       </Offcanvas>
     </>
@@ -78,21 +93,18 @@ background-color: #4183f5;
 color: white;
 font-weight: 700;
 border: none;
-}
+
   @media (max-width: 768px) {
     font-size: 10px;
     margin-top: 15px;
     margin-right: 15px;
   }
-`;
+`
 const CreateC = styled.button`
-position: absolute;
-right: 30%;
-left: 35%;
 border-radius: 15px;
-padding: 10px 30px;
+padding: 5px 15px;
 margin-top: 10px;
-margin-right: 40px;
+margin-left: 20px;
 background-color: #4183f5;
 color: white;
 font-weight: 700;
