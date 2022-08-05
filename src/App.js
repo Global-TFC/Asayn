@@ -26,7 +26,6 @@ import Container from 'react-bootstrap/Container';
 import CRF from "./CreaterRouts";
 import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 import TCource from "./components/pages/Accadamy/TCource";
-import Create from "./components/pages/Accadamy/cource create page/Create";
 import Alert from "./components/includes/Alert Box/Alert";
 
 function App() {

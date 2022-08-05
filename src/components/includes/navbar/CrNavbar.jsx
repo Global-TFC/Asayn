@@ -5,6 +5,7 @@ import "../../../theme/GlobalStyles"
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import {  Col, Row } from 'react-bootstrap';
 import Toast from 'react-bootstrap/Toast';
+import styled from 'styled-components';
 
 function CrNavbar() {
     const [show, setShow] = useState(false);
@@ -21,10 +22,10 @@ function CrNavbar() {
                     <div className="notti_links " >
                         <span className="dropdown">
                             <button className="dropbtn"><i className='bx bxs-user nav__icon topnavlist' ></i><i className='bx bxs-chevron-down nav__icon'></i></button>
-                            <div className="dropdown-content">
+                            <BorderRadios className="dropdown-content">
                                 <NavLink to="/user">Login</NavLink>
                                 <NavLink to="/user">Sign Up</NavLink>
-                            </div>
+                            </BorderRadios>
                         </span>
                         <span className="dropdown">
                             <button className="dropbtn"><i className='bx bx-message-square-add nav__icon topnavlist'></i></button>
@@ -68,5 +69,9 @@ function CrNavbar() {
         </>
     )
 }
+
+const BorderRadios =styled.div`
+    border-radius: 10px;
+`
 
 export default CrNavbar
