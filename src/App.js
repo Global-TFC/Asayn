@@ -27,7 +27,10 @@ import CRF from "./CreaterRouts";
 import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 import TCource from "./components/pages/Accadamy/TCource";
 import Create from "./components/pages/Accadamy/cource create page/Create";
+import Accadamypage from './components/pages/Accadamy/Accadamypage';
 import Alert from "./components/includes/Alert Box/Alert";
+import Userbar from "./components/includes/navbar/Userbar";
+import SRF from "./components/screens/StuScreens/SRF";
 
 function App() {
   return (
@@ -35,17 +38,16 @@ function App() {
       <Fragment>
         <GlobalStyles />
         <Router>
-          <Navbar />
+          <Userbar />
           <Sidebar />
           <Routes>
-            <Route path="/" >
+            <Route path="/" element={<SRF/>}>
               <Route index element={<HomePage />} />
               <Route path="Enroll" element={<EnrollPage />} />
               <Route path="coursenamehome">
                 <Route index element={<CoursePage />} />
                 <Route path="courcepage" element={<CoursePage />} />
                 <Route path="vedioplayname" element={<VedioPlayPage />} />
-
               </Route>
               <Route path="community" element={<Alert />} />
               <Route path="user" element={<PopUp />} />
@@ -61,9 +63,11 @@ function App() {
                 <Route path="chatername" element={<Community />} />
               </Route>
             </Route>
-            <Route path="creater" element={<CRF />} />
-            <Route path="tcource" element={<TCource />} />
-            <Route path="create" element={<TCource />} />
+            <Route path="/creater" element={<CRF />} >
+              <Route index element={<Accadamypage />} />
+              <Route path="tcource" element={<TCource />} />
+              <Route path="create" element={<TCource />} />
+            </Route>
             <Route path="*" element={<Noscreen />} />
           </Routes>
         </Router>
