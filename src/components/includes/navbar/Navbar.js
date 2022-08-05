@@ -6,6 +6,7 @@ import "../../../theme/GlobalStyles"
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Col, Row } from 'react-bootstrap';
 import Toast from 'react-bootstrap/Toast';
+import styled from 'styled-components';
 
 
 function Navbar() {
@@ -25,10 +26,10 @@ function Navbar() {
                     <div className="notti_links " >
                         <span className="dropdown">
                             <button className="dropbtn"><i className='bx bxs-user nav__icon topnavlist' ></i><i class='bx bxs-chevron-down nav__icon'></i></button>
-                            <div className="dropdown-content">
+                            <BorderRadios className="dropdown-content">
                                 <NavLink to="/user">Login</NavLink>
                                 <NavLink to="/user">Sign Up</NavLink>
-                            </div>
+                            </BorderRadios>
                         </span>
                         <Link to="#"><i className='bx bxs-bell-ring  nav__icon topnavlist'></i></Link>
                         <Link to="#"><i className='bx bxs-chat bx-tada nav__icon topnavlist' onClick={handleShow} ></i></Link>
@@ -67,4 +68,7 @@ function Navbar() {
     )
 }
 
+const BorderRadios =styled.div`
+    border-radius: 10px;
+`
 export default Navbar

@@ -1,13 +1,18 @@
 @media only screen and (min-width: 766px) {
-  .offcanvas-bottom {
-    left: 15%;
-    height: 65vh;
-    width: 70%;
-  }
+    .offcanvas-bottom {
+        left: 15%;
+        height: 65vh;
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 350px) {
     .offcanvas-bottom {
         height: 60vh;
-    }   
+    }
+}
+
+.canvabody {
+    border-radius: 20px;
+    margin-bottom: 20vh;
 }

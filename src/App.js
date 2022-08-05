@@ -16,21 +16,19 @@ import LoginTeacher from "./components/pages/Accadamy/SignIn/SignIn"
 import LoginStudent from "./components/pages/Students/Signin/Signin"
 import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
-import Navbar from "./components/includes/navbar/Navbar";
 import Sidebar from "./components/includes/navbar/Sidebar";
 import Community from "./components/firebase/Cloud Firestore/community/Chat";
 import About from "./components/screens/StuScreens/About";
-import ChatPage from "./components/screens/ChatPage/ChatPage";
 import Container from 'react-bootstrap/Container';
 // accadamypage routs in CRF file
 import CRF from "./CreaterRouts";
 import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 import TCource from "./components/pages/Accadamy/TCource";
-import Create from "./components/pages/Accadamy/cource create page/Create";
 import Accadamypage from './components/pages/Accadamy/Accadamypage';
 import Alert from "./components/includes/Alert Box/Alert";
 import Userbar from "./components/includes/navbar/Userbar";
 import SRF from "./components/screens/StuScreens/SRF";
+import Account from "./components/screens/Account/Account"
 
 function App() {
   return (
@@ -41,6 +39,16 @@ function App() {
           <Userbar />
           <Sidebar />
           <Routes>
+            <Route path="account" element={<Account/>}>
+              <Route path="student">
+                <Route path="login"/>
+                <Route path="signup"/>
+              </Route>
+              <Route path="acadamy">
+                <Route path="alogin"/>
+                <Route path="asignup"/>
+              </Route>
+            </Route>
             <Route path="/" element={<SRF/>}>
               <Route index element={<HomePage />} />
               <Route path="Enroll" element={<EnrollPage />} />

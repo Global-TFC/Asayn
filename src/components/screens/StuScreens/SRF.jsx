@@ -6,7 +6,7 @@ import Sidebar from '../../includes/navbar/Sidebar'
 function SRF() {
   return (
     <>
-        <Navbar/>
+        {/* <Navbar/> */}
         <Sidebar/>
         <Outlet/>
     </>
