@@ -30,10 +30,6 @@ function SignUp() {
           </div>
           <div>
             <div className="mb-3">
-              <label>Name</label>
-              <input type="text" className="form-control" placeholder="Name" />
-            </div>
-            <div className="mb-3">
               <label>Email address</label>
               <input
                 type="email"

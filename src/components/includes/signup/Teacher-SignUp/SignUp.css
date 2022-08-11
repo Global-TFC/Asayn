@@ -1,77 +1,101 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-h1,h2,h3,h4,h5,h6,label,span {
-  font-weight: 500;
-  font-family: 'Fira Sans', sans-serif;
-  text-align: center;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
 }
-body, html, .App, #root, .auth-wrapper {
-  width: 100%;
-  height: 100%;
-}
-.navbar-light {
-  background-color: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-}
+
+body,
+html,
+.App,
+#root,
 .auth-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
+    width: 100%;
+    height: 100%;
 }
+
+.navbar-light {
+    background-color: #ffffff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
 .auth-inner {
-  width: 450px;
-  margin: auto;
-  background: #ffffff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
-  padding: 40px 55px 45px 55px;
-  border-radius: 15px;
-  transition: all .3s;
+    width: 450px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 40px 55px 45px 55px;
+    border-radius: 15px;
+    transition: all .3s;
 }
+
 .auth-wrapper .form-control:focus {
-  border-color: #167bff;
-  box-shadow: none;
+    border-color: #167bff;
+    box-shadow: none;
 }
+
 .auth-wrapper h3 {
-  text-align: center;
-  margin: 0;
-  line-height: 1;
-  padding-bottom: 20px;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
 }
+
 .custom-control-label {
-  font-weight: 400;
+    font-weight: 400;
 }
+
 .forgot-password,
 .forgot-password a {
-  text-align: right;
-  font-size: 13px;
-  padding-top: 10px;
-  color: #7f7d7d;
-  margin: 0;
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
 }
+
 .forgot-password a {
-  color: #167bff;
+    color: #167bff;
 }
+
 .signup {
     text-align: center;
 }
+
 .sign-in-btn {
-  color: black;
-  background-color: #dddddd;
-  border-radius: 10px;
-  border: none;
-  padding: 15px 32px;
-  font-size: 1.2rem;
-  margin: 30px;
-  
+    color: black;
+    background-color: #dddddd;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    margin: 20px;
 }
+
 .sign-in-btn img {
-  height: 40px;
-  width: 40px;
-  margin-right: 12px;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
 }
+
 p {
-  text-align: center;
+    text-align: center;
 }
