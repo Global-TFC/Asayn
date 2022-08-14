@@ -15,7 +15,7 @@ function PopUp() {
         </div>
         <Col md="6">
           {/* /tregister */}
-          <Link to="">
+          <Link to="tlogin">
             <Selections >
               <i class='bx bxs-video-plus ifont'></i><br />
               <span className="sfont">Creater</span>
@@ -24,7 +24,7 @@ function PopUp() {
         </Col>
         <Col md="6">
           {/* /register */}
-          <Link to="">
+          <Link to="login">
             <Selections  >
               <i class='bx bx-slideshow ifont'></i><br />
               <span className="sfont">Student</span>

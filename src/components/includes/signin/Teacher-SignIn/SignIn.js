@@ -1,10 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ClossButten from '../../closs butten/ClossButten'
-import Apps from "../../../firebase/Authentication/Apps/Apps";
-
-
+import { auth } from "../../../firebase/Authentication/Apps/Firebase";
+import firebase from "firebase/compat/app";
+import Google from "../../../../assets/Logo/google.png"
+import Facebook from "../../../../assets/Logo/facebook.png"
 function SignIn() {
+  const signInWithGoogle = (e) => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider);
+  };
+  const signInWithFacebook = (e) => {
+    const provider = new firebase.auth.FacebookAuthProvider();
+    auth.signInWithPopup(provider);
+  };
   return (
     <>
       <div className="modalBackground">
@@ -14,7 +23,7 @@ function SignIn() {
           </div>
           <h3 className="signup">Login</h3>
           <div className="body">
-            <p>As a Teacher</p>
+            <p>As a Creater</p>
           </div>
           <div>
             <div className="mb-3">
@@ -42,9 +51,17 @@ function SignIn() {
             <Link to="#">Forgotten your password?</Link>
             </p>
             <p className="forgot-password text-center">
-            Don't have an account? <Link to="/tregister">Sign up</Link>
+            Don't have an creater account? <Link to="/tregister">Sign up</Link>
             </p>
-            {<Apps />}
+            <p>OR</p>
+              <button className="sign-in-btn" onClick={signInWithGoogle}>
+                <img src={Google} alt="" />
+                <span>Google</span>
+              </button>
+              <button className="sign-in-btn" onClick={signInWithFacebook}>
+                <img src={Facebook} alt="" />
+                <span>Facebook</span>
+              </button>
           </div>
         </div>
       </div>

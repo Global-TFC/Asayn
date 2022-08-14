@@ -28,6 +28,7 @@ function SignUp() {
           <div>
             <div className="mb-3">
               <label>Email</label>
+              <label>Email address</label>
               <input
                 type="email"
                 className="form-control"

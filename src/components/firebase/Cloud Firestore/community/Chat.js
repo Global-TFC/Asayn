@@ -55,7 +55,7 @@ function Chat() {
           <TypeTab>
             <form onSubmit={sendMessage}>
               <div className="input-bg">
-                <input
+                <textarea
                   className="input"
                   value={formValue}
                   onChange={(e) => setFormValue(e.target.value)}
@@ -67,7 +67,7 @@ function Chat() {
                   📁
                 </label>
 
-                <button className="btn" type="submit" disabled={!formValue}>
+                <button className="textarea-btn" type="submit" disabled={!formValue}>
                   🕊️
                 </button>
               </div>
