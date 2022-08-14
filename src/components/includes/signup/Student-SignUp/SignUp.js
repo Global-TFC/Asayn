@@ -21,20 +21,13 @@ function SignUp() {
     <>
       <div className="modalBackground">
         <div className="modalContainer">
-          <div className="titleCloseBtn">
-            <ClossButten />
-          </div>
           <h3 className="signip">Register</h3>
           <div className="body">
             <p>As a Student</p>
           </div>
           <div>
             <div className="mb-3">
-              <label>Name</label>
-              <input type="text" className="form-control" placeholder="Name" />
-            </div>
-            <div className="mb-3">
-              <label>Email address</label>
+              <label>Email</label>
               <input
                 type="email"
                 className="form-control"
@@ -55,7 +48,7 @@ function SignUp() {
               </button>
             </div>
             <p className="forgot-password text-center">
-              Already have an account? <Link to="/login">sign in</Link>
+              Already have an account? <Link to="">sign in</Link>
             </p>
             <div>
               <p>OR</p>

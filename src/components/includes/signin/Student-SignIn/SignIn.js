@@ -18,9 +18,6 @@ function SignIn() {
     <>
       <div className="modalBackground">
         <div className="modalContainer">
-          <div className="titleCloseBtn">
-            <ClossButten />
-          </div>
           <h3 className="signup">Login</h3>
           <div className="body">
             <p>As a Student</p>
@@ -49,9 +46,6 @@ function SignIn() {
             </div>
             <p className="forgot-password text-center">
             <Link to="#">Forgotten your password?</Link>
-            </p>
-            <p className="forgot-password text-center">
-            Don't have an account? <Link to="/tregister">Sign up</Link>
             </p>
             <p>OR</p>
               <button className="sign-in-btn" onClick={signInWithGoogle}>
