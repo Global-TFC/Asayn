@@ -1,97 +1,107 @@
 .messagebody {
-  background-color: #282c34;
-  width: 60%;
-  float: left;
-  align-items: center;
+    background-color: #282c34;
+    width: 60%;
+    float: left;
+    align-items: center;
 }
 
 .container {
-  width: 100%;
+    width: 100%;
 }
 
 .message {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
+
 .textarea-btn {
-  width: 20%;
-  border: none;
+    width: 20%;
+    border: none;
 }
 
 .input {
-  width: 70%;
-  font-size: 20px;
-  color: white;
-  outline: none;
-  border: none;
-  padding: 2px 15px;
+    width: 70%;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 2px 15px;
 }
+
 .input-bg {
-  width: 75%;
-  height: 40px;
-  display: flex;
-  background: rgb(104, 104, 104);
-  border-radius: 20px;
+    width: 75%;
+    height: 40px;
+    display: flex;
+    background: rgb(104, 104, 104);
+    border-radius: 20px;
 }
 
 input[type="file"] {
-  display: none;
+    display: none;
 }
+
 .custom-file-upload {
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
 }
 
 .sent {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .sent p {
-  background: #e5e5ea;
-  color: black;
-  max-width: 500px;
-  margin-bottom: 12px;
-  align-self: flex-end;
-  line-height: 24px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  position: relative;
-  text-align: center;
+    background: #e5e5ea;
+    color: black;
+    max-width: 500px;
+    margin-bottom: 12px;
+    align-self: flex-end;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    text-align: center;
 }
 
 .received p {
-  background: #e5e5ea;
-  color: black;
-  max-width: 500px;
-  margin-bottom: 12px;
-  line-height: 24px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  position: relative;
-  text-align: center;
+    background: #e5e5ea;
+    color: black;
+    max-width: 500px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    text-align: center;
 }
 
 .img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin: 2px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
 }
 
 .acadamy {
-  max-height: 100vh;
-  background-color: #cce6ff;
-  float: left;
+    max-height: 100vh;
+    background-color: #cce6ff;
+    float: left;
 }
 
 .boxsize {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin: 20px;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 20px;
 }
 
 .chattabsize {
-  height: 70%;
+    max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+    .boxsize {
+        height: 87vh;
+        margin: 0px;
+    }
 }
