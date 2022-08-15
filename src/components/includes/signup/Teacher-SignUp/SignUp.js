@@ -22,12 +22,9 @@ function SignUp() {
     <>
       <div className="modalBackground">
         <div className="modalContainer">
-          <div className="titleCloseBtn">
-            <ClossButten />
-          </div>
           <h3 className="signip">Register</h3>
           <div className="body">
-            <p>As a Teacher</p>
+            <p>As a Creater</p>
           </div>
           <div>
             <div className="mb-3">
@@ -52,7 +49,7 @@ function SignUp() {
               </button>
             </div>
             <p className="forgot-password text-center">
-              Already have an account? <Link to="/tlogin">sign in</Link>
+              Already have an account? <Link to="">sign in</Link>
             </p>
             <p>OR</p>
             <button className="sign-in-btn" onClick={signInWithGoogle}>

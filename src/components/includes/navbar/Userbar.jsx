@@ -61,7 +61,7 @@ function Userbar() {
                             </Modal>
                             <Modal className='accoundselect' size="md"
                                 aria-labelledby="contained-modal-title-vcenter"
-                                centered tshow={showt} onHide={thandleClose}>
+                                centered show={showt} onHide={thandleClose}>
                                 <Modal.Header closeButton>
                                     <Modal.Title>Creater Account</Modal.Title>
                                 </Modal.Header>

@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import Groups from '../../firebase/Cloud Firestore/community/Groups';
 import styled from 'styled-components';
 import ChatMessage from '../../firebase/Cloud Firestore/community/ChatMessage';
+import Chat from '../../firebase/Cloud Firestore/community/Chat';
+import ChatRout from '../../firebase/Cloud Firestore/community/ChatRout';
 
 function Sidebar() {
 
@@ -47,7 +49,7 @@ function Sidebar() {
                             <Modal.Title>asayn chat</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <Groups/>
+                            <ChatRout/>
                         </Modal.Body>
                     </Modal>
                 </li>
