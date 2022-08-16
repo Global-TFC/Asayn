@@ -5,16 +5,20 @@ import "firebase/compat/auth";
 import "firebase/compat/analytics";
 import "./Chat.css";
 import styled from "styled-components";
-
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import ChatMessage from "./ChatMessage";
 import BackButten from "../../../includes/back butten/BackButten";
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
 function Chat() {
+  const [show, setShow] = useState(true);
+  const handleShow = () => setShow(true);
   const dummy = useRef();
   const messagesRef = firestore.collection("messages");
   const query = messagesRef.orderBy("createdAt").limit(25);
@@ -38,8 +42,14 @@ function Chat() {
   };
 
   return (
-    <div className="modalBackground">
-      <div className="modalContainer">
+    <>
+    <Offcanvas show={show} >
+        <Offcanvas.Header >
+          <Offcanvas.Title>Asayn Chat</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        {/* <div className="modalBackground">
+      <div className="modalContainer"> */}
         <ChatNav>
           <BackButten />
           <ChatName href="#home">Chat Name</ChatName>
@@ -74,8 +84,12 @@ function Chat() {
             </form>
           </TypeTab>
         </Body>
-      </div>
-    </div>
+      {/* </div>
+    </div> */}
+        </Offcanvas.Body>
+      </Offcanvas>
+    
+    </>
   );
 }
 

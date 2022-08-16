@@ -6,16 +6,17 @@ import Badge from "react-bootstrap/Badge";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Link } from "react-router-dom";
 import './Chat.css'
+import Chat from "./Chat";
 
 function Groups() {
   return (
-
-    <div className="modalBackground ">
-      <div className="modalContainer boxsize">
+    
+    // <div className="modalBackground ">
+      // <div className="modalContainer boxsize">
         <Container fluid>
           <Row>
-          <Link to="chatername">
-            <Col className="chattabsize">
+          <Link to="/chatername">
+            <Col className="chattabsize" >
               {Array.from({ length: 30 }).map((_, idx) => (
                 
                   <ListGroup.Item
@@ -36,8 +37,8 @@ function Groups() {
             </Link>
           </Row>
         </Container>
-      </div>
-    </div>
+      // </div>
+    // </div>
   );
 }
 

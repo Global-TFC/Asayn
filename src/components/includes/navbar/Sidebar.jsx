@@ -1,73 +1,74 @@
-import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import "./Navbar.css"
-import "../../../theme/GlobalStyles"
-import { Link } from 'react-router-dom';
-import Groups from '../../firebase/Cloud Firestore/community/Groups';
-import styled from 'styled-components';
-import ChatMessage from '../../firebase/Cloud Firestore/community/ChatMessage';
-import Chat from '../../firebase/Cloud Firestore/community/Chat';
-import ChatRout from '../../firebase/Cloud Firestore/community/ChatRout';
+import React, { useState } from "react";
+import "./Navbar.css";
+import "../../../theme/GlobalStyles";
+import { Link } from "react-router-dom";
+import Groups from "../../firebase/Cloud Firestore/community/Groups";
+import styled from "styled-components";
+import ChatMessage from "../../firebase/Cloud Firestore/community/ChatMessage";
+import Chat from "../../firebase/Cloud Firestore/community/Chat";
+import ChatRout from "../../firebase/Cloud Firestore/community/ChatRout";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Sidebar() {
+  const [show, setShow] = useState(false);
 
-    const values = [true];
-    const [fullscreen, setFullscreen] = useState(true);
-    const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-    function handleShow(breakpoint) {
-        setFullscreen(true);
-        setShow(true);
-    }
+  return (
+    <div className="nav__menu" id="nav-menu">
+      <ul className="nav__list">
+        <li className="nav__item">
+          <Link to={"/"} className="nav__link active-link">
+            <i className="bx bxs-graduation nav__icon"></i>
+            <br />
+            <span className="nav__name">Home</span>
+          </Link>
+        </li>
 
-    return (
-        <div className="nav__menu" id="nav-menu">
-            <ul className="nav__list">
-                <li className="nav__item">
-                    <Link to={"/"} className="nav__link active-link">
-                        <i className='bx bxs-graduation nav__icon'></i><br />
-                        <span className="nav__name">Home</span>
-                    </Link>
-                </li>
+        <li class="nav__item">
+          <Link to={"/mycourse"} className="nav__link">
+            <i className="bx bx-slideshow nav__icon"></i>
+            <br />
+            <span className="nav__name">Class</span>
+          </Link>
+        </li>
 
-                <li class="nav__item">
-                    <Link to={"/mycourse"} className="nav__link">
-                        <i className='bx bx-slideshow nav__icon'></i><br />
-                        <span className="nav__name">Class</span>
-                    </Link>
-                </li>
+        <li className="nav__item">
+            <Butten
+              className="nav__link"
+              onClick={handleShow}
+            >
+              <i className="bx bx-chat nav__icon"></i>
+              <br />
+              <span className="nav__name">Chat</span>
+            </Butten>
+          
+          <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+         <ChatRout />
+        </Offcanvas.Body>
+      </Offcanvas>
+        </li>
 
-                <li className="nav__item">
-                    {values.map((v, idx) => (
-                        <Butten key={idx} className="nav__link" onClick={() => handleShow(v)}>
-                            <i className='bx bx-chat nav__icon'></i><br />
-                            <span className="nav__name">Chat</span>
-                        </Butten>
-                    ))}
-                    <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
-                        <Modal.Header closeButton>
-                            <Modal.Title>asayn chat</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <ChatRout/>
-                        </Modal.Body>
-                    </Modal>
-                </li>
-
-                <li className="nav__item">
-                    <Link to={"/aboutme"} className="nav__link">
-                        <i className='bx bxs-user nav__icon'></i><br />
-                        <span className="nav__name">About</span>
-                    </Link>
-                </li>
-            </ul>
-        </div>
-    )
+        <li className="nav__item">
+          <Link to={"/aboutme"} className="nav__link">
+            <i className="bx bxs-user nav__icon"></i>
+            <br />
+            <span className="nav__name">About</span>
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 const Butten = styled.button`
-    box-sizing: none;
-    border: none;
-`
+  box-sizing: none;
+  border: none;
+`;
 
 export default Sidebar;

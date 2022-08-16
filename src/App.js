@@ -66,10 +66,10 @@ function App() {
               <Route path="mycourse" element={<Mycourse />} />
               <Route path="acadamyname" element={<Acadamy />} />
               <Route path="aboutme" element={<About />} />
-              <Route path="chat">
-                <Route index element={<Groups />} />
+              {/* <Route path="/chat"> */}
+                {/* <Route index element={<Groups />} /> */}
                 <Route path="chatername" element={<Community />} />
-              </Route>
+              {/* </Route> */}
             </Route>
             <Route path="/creater" element={<CRF />} >
               <Route index element={<Accadamypage />} />
