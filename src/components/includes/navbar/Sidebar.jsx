@@ -4,9 +4,6 @@ import "../../../theme/GlobalStyles";
 import { Link } from "react-router-dom";
 import Groups from "../../firebase/Cloud Firestore/community/Groups";
 import styled from "styled-components";
-import ChatMessage from "../../firebase/Cloud Firestore/community/ChatMessage";
-import Chat from "../../firebase/Cloud Firestore/community/Chat";
-import ChatRout from "../../firebase/Cloud Firestore/community/ChatRout";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Sidebar() {
@@ -46,10 +43,10 @@ function Sidebar() {
           
           <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>Asayn Communities</Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-         <ChatRout />
+        <Offcanvas.Body >
+         <Groups  />
         </Offcanvas.Body>
       </Offcanvas>
         </li>

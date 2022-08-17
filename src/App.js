@@ -17,12 +17,10 @@ import LoginStudent from "./components/pages/Students/Signin/Signin"
 import Acadamy from "./components/screens/StuScreens/Acadamy";
 import Mycourse from "./components/screens/StuScreens/Mycoursepage"
 import Sidebar from "./components/includes/navbar/Sidebar";
-import Community from "./components/firebase/Cloud Firestore/community/Chat";
 import About from "./components/screens/StuScreens/About";
 import Container from 'react-bootstrap/Container';
 // accadamypage routs in CRF file
 import CRF from "./CreaterRouts";
-import Groups from "./components/firebase/Cloud Firestore/community/Groups";
 import TCource from "./components/pages/Accadamy/TCource";
 import Accadamypage from './components/pages/Accadamy/Accadamypage';
 import Alert from "./components/includes/Alert Box/Alert";
@@ -66,10 +64,6 @@ function App() {
               <Route path="mycourse" element={<Mycourse />} />
               <Route path="acadamyname" element={<Acadamy />} />
               <Route path="aboutme" element={<About />} />
-              {/* <Route path="/chat"> */}
-                {/* <Route index element={<Groups />} /> */}
-                <Route path="chatername" element={<Community />} />
-              {/* </Route> */}
             </Route>
             <Route path="/creater" element={<CRF />} >
               <Route index element={<Accadamypage />} />

@@ -8,7 +8,7 @@ import styled from "styled-components";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import ChatMessage from "./ChatMessage";
 import BackButten from "../../../includes/back butten/BackButten";
-import Offcanvas from 'react-bootstrap/Offcanvas';
+
 
 
 
@@ -43,16 +43,9 @@ function Chat() {
 
   return (
     <>
-    <Offcanvas show={show} >
-        <Offcanvas.Header >
-          <Offcanvas.Title>Asayn Chat</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-        {/* <div className="modalBackground">
-      <div className="modalContainer"> */}
         <ChatNav>
-          <BackButten />
-          <ChatName href="#home">Chat Name</ChatName>
+          {/* <BackButten /> */}
+          <ChatName href="#home">Community Name</ChatName>
         </ChatNav>
         <Body>
           <main>
@@ -84,11 +77,6 @@ function Chat() {
             </form>
           </TypeTab>
         </Body>
-      {/* </div>
-    </div> */}
-        </Offcanvas.Body>
-      </Offcanvas>
-    
     </>
   );
 }
