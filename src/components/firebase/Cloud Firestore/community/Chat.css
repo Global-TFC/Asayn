@@ -104,4 +104,15 @@ input[type="file"] {
         height: 87vh;
         margin: 0px;
     }
+    .offcanva {
+        width: 100%;
+    }
+}
+
+.list-item {
+    border: none;
+}
+
+.avathar {
+    margin-right: 10px;
 }

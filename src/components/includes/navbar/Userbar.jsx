@@ -31,8 +31,8 @@ function Userbar() {
                     <Link to={"/"} className="nav__logo">Asayn</Link>
                     <div className="notti_links " >
                         <span className="dropdown">
-                            <button className="dropbtn"><i className='bx bxs-user nav__icon topnavlist' ></i><i class='bx bxs-chevron-down nav__icon'></i></button>
-                            <DropDB className="dropdown-content">
+                            <button className="dropbtn user-drop"><i className='bx bxs-user nav__icon topnavlist' ></i><i class='bx bxs-chevron-down nav__icon'></i></button>
+                            <DropDB className="dropdown-content ">
                                 <Navlist onClick={shandleShow} > Student</Navlist>
                                 <br />
                                 <Navlist onClick={thandleShow} > Creater</Navlist>

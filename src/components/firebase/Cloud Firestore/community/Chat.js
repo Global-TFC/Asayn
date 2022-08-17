@@ -83,28 +83,28 @@ function Chat() {
 
 const TypeTab = styled.div`
   position: fixed;
-  bottom: 0;
-  width: 500px;
+  bottom: 10px;
+  width: 480px;
   @media (max-width: 768px) {
-    bottom: 50px;
-    width: 98%;
+    bottom: 10px;
+    max-width:768px ;
+    width: 120%;
     left: 20px;
   }
 `;
 const ChatNav = styled.h4`
-  background-color: #4bb7ff;
-  border-radius: 20px;
+  border-radius: 10px;
   position: fixed;
-  top: 10;
-  padding-right: 20px;
+  top: 0;
   z-index: 10;
+  margin-top: 13px;
 `;
 const Body = styled.div`
   max-width: 100%;
   margin-top: 40px;
   margin-bottom: 50px;
   @media (max-width: 768px) {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 `;
 

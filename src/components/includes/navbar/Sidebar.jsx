@@ -41,7 +41,7 @@ function Sidebar() {
               <span className="nav__name">Chat</span>
             </Butten>
           
-          <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas className="offcanva" show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Asayn Communities</Offcanvas.Title>
         </Offcanvas.Header>
