@@ -24,10 +24,10 @@ function OffCanvasExample({ ...props }) {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Row>
-            <Col md={12}>
+            <Col md={6} sm={12}  >
               <InputGroup className="mb-3">
                 <InputGroup.Text id="inputGroup-sizing-default">
-                  Title
+                  Course Name
                 </InputGroup.Text>
                 <Form.Control
                   aria-label="Default"
@@ -35,10 +35,10 @@ function OffCanvasExample({ ...props }) {
                 />
               </InputGroup>
             </Col>
-            <Col md={12}>
+            <Col md={6} sm={12}>
               <InputGroup className="mb-3">
                 <InputGroup.Text id="inputGroup-sizing-default">
-                  Id
+                  Course Id
                 </InputGroup.Text>
                 <Form.Control
                   aria-label="Default"
@@ -51,9 +51,9 @@ function OffCanvasExample({ ...props }) {
             <Col>
               <Form.Select aria-label="Default select example">
                 <option>Category</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">Coding</option>
+                <option value="2">School</option>
+                <option value="3">Degree</option>
               </Form.Select>
             </Col>
             <Col>
@@ -62,18 +62,23 @@ function OffCanvasExample({ ...props }) {
                 <option value="1">English</option>
                 <option value="2">Malayalam</option>
                 <option value="3">Tamil</option>
+                <option value="4">Tamil</option>
               </Form.Select>
             </Col>
           </Row>
-          <InputGroup className="pt-3">
-          <FloatingLabel controlId="floatingTextarea2" label="About Course">
-            <Form.Control
-              as="textarea"
-              placeholder="about your course"
-              style={{ minHeight: '100px' }}
-            />
-          </FloatingLabel>
-          </InputGroup>
+          <Row>
+            <Col md={8} sm={12}>
+            <InputGroup className="pt-3">
+              <FloatingLabel controlId="floatingTextarea2" label="About Course">
+                <Form.Control
+                  as="textarea"
+                  placeholder="about your course"
+                  style={{ minHeight: '200px', width: '100%' }}
+                />
+              </FloatingLabel>
+            </InputGroup>
+            </Col>
+          </Row>
           <Form.Check inline label="free" name="group" type="radio" />
           <Form.Check inline label="paid" name="group" type="radio" />
           <CreateC>Create Cource</CreateC>
