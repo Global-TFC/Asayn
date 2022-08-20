@@ -1,4 +1,4 @@
-# knolsort Learnig App
+# Asayn Learnig App
 
 <img src="./src/assets/construct.svg" alt="construct" align="cenet" />
 
