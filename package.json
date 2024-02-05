@@ -5,6 +5,8 @@
   "private": true,
   "dependencies": {
     "@deadcoder0904/react-typical": "^0.1.2",
+    "@popperjs/core": "^2.10.2",
+    "@testing-library/dom": "^7.21.4",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -14,7 +16,8 @@
     "firebase": "^9.9.0",
     "font-awesome": "^4.7.0",
     "gh-pages": "^6.0.0",
-    "react": "^17.0.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^17.0.2",
     "react-firebase-hooks": "^5.0.3",
@@ -26,6 +29,7 @@
     "react-scripts": "4.0.3",
     "recharts": "^2.1.12",
     "styled-components": "^5.3.0",
+    "typescript": "^5.3.3",
     "video-react": "^0.15.0",
     "web-vitals": "^1.0.1"
   },
@@ -35,7 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
